@@ -1,0 +1,764 @@
+﻿<div style="position:sticky; top:0; background-color:#ffffff; padding:15px 0; text-align:center; font-family:Arial, sans-serif; box-shadow:0 4px 6px rgba(0,0,0,0.1); z-index:1000; display:flex; flex-direction:column; align-items:center;">
+  <h3 style="margin:2px 0; color:#333; text-align:center;">Mr. Ameen Sharqawy</h2>
+
+  <div style="margin-top:8px;">
+    <a href="tel:+201279217092" style="display:inline-block; background-color:#007BFF; color:#fff; padding:8px 16px; margin:3px; border-radius:5px; text-decoration:none; font-weight:bold;">
+      📞 01279217092
+    </a>
+    <a href="https://wa.me/+201279217092" target="_blank" style="display:inline-block; background-color:#25D366; color:#fff; padding:8px 16px; margin:3px; border-radius:5px; text-decoration:none; font-weight:bold;">
+      💬 تواصل عبر الواتس
+    </a>
+  </div>
+</div><!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prim 5 - Unit 1: Life Along the Nile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f4f8; --card-color: #ffffff; --accent-color: #2e7d32;
+            --text-color: #212121; --highlight-color: #c8e6c9; --speak-highlight: #1b5e20;
+            --play-all-btn: #4caf50; --secondary-text-color: #424242; --border-color: #81c784;
+            --speech-glow: #ffeb3b;
+        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--bg-color); margin: 0; padding: 20px; text-align: center; color: var(--text-color); transition: background-color 0.3s; }
+        .container { max-width: 1000px; margin: 0 auto 50px auto; background-color: var(--card-color); border-radius: 25px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); padding: 40px; border: 8px solid var(--accent-color); transition: border-color 0.3s; }
+        h1 { color: var(--accent-color); font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: var(--speak-highlight); border-bottom: 2px solid var(--border-color); display: inline-block; padding-bottom: 5px; }
+        h3 { background-color: var(--highlight-color); padding: 12px; border-radius: 10px; margin-top: 30px; text-align: right; direction: ltr; font-size: 1.6em; }
+
+        .speech-controls { background: #e8f5e9; padding: 15px; border-radius: 15px; margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; align-items: center; }
+        .control-group { display: flex; align-items: center; gap: 8px; font-weight: bold; }
+        #speed-value { min-width: 32px; display: inline-block; font-weight: bold; color: var(--accent-color); }
+
+        .theme-switcher { display: flex; gap: 8px; align-items: center; }
+        .theme-dot { width: 26px; height: 26px; border-radius: 50%; cursor: pointer; border: 2px solid #fff; box-shadow: 0 0 0 1px #999; }
+        .theme-dot.active { box-shadow: 0 0 0 2px #333; }
+
+        .table-wrap { width: 100%; overflow-x: auto; }
+        table { width: 100%; min-width: 320px; border-collapse: separate; border-spacing: 0; margin-top: 15px; text-align: right; border-radius: 15px; overflow: hidden; }
+        th, td { border: 1px solid var(--border-color); padding: 12px; }
+        th { background-color: var(--accent-color); color: white; }
+        td:nth-child(odd) { background-color: #f1f8e9; }
+
+        .english-cell { text-align: left !important; direction: ltr !important; }
+        .arabic-cell { text-align: right !important; direction: rtl !important; }
+
+        .play-btn { background-color: var(--play-all-btn); color: white; border: none; padding: 12px 25px; border-radius: 12px; cursor: pointer; font-size: 1.1em; box-shadow: 0 5px #388e3c; margin: 10px 0; transition: 0.1s; }
+        .play-btn:active { transform: translateY(3px); box-shadow: 0 2px #388e3c; }
+
+        .vocab-element, .english-sentence { 
+            cursor: pointer; transition: 0.2s; padding: 4px 8px; border-radius: 4px; display: inline-block; 
+            font-family: 'Roboto', sans-serif; font-weight: 700; color: #1a237e; 
+            border: 2px solid transparent;
+            direction: ltr !important; text-align: left;
+        }
+        .vocab-element:hover, .english-sentence:hover { background-color: var(--highlight-color); }
+        .english-sentence { display: block; text-align: left; margin-bottom: 5px; color: #000; }
+        .speaking-highlight { 
+            background-color: var(--speak-highlight) !important; 
+            color: white !important; 
+            border-color: var(--speech-glow) !important;
+            box-shadow: 0 0 15px var(--speech-glow);
+            transform: scale(1.02);
+        }
+        .arabic-translation { 
+            display: block; text-align: right; direction: rtl !important;
+            color: var(--secondary-text-color); border-bottom: 1px dashed #ccc; 
+            margin-bottom: 15px; padding-bottom: 5px; font-size: 1.05em; font-weight: bold; 
+        }
+
+        .reading-paragraph { margin-bottom: 16px; padding: 15px; background: #f9f9f9; border-radius: 10px; text-align: left; }
+
+        .floating-stop-btn { position: fixed; bottom: 25px; right: 25px; z-index: 1000; background:#d32f2f; color:white; border:none; border-radius:50%; width:64px; height:64px; font-size:1.6em; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,0.35); display:flex; align-items:center; justify-content:center; transition: transform 0.15s; }
+        .floating-stop-btn:active { transform: scale(0.92); }
+
+        .quiz-question { background:#f9f9f9; border:2px solid var(--border-color); border-radius:12px; padding:15px; margin-bottom:15px; text-align:left; direction:ltr; }
+        .quiz-question p.q-text { font-size:1.15em; font-weight:bold; margin:0 0 10px 0; color:var(--text-color); }
+        .quiz-options { display:flex; flex-direction:column; gap:8px; }
+        .quiz-option { background:#fff; border:2px solid var(--border-color); border-radius:8px; padding:10px 15px; cursor:pointer; text-align:left; font-family:'Roboto',sans-serif; font-weight:700; transition:0.2s; direction:ltr; }
+        .quiz-option:hover { background: var(--highlight-color); }
+        .quiz-option.correct { background:#a5d6a7 !important; border-color:#2e7d32; color: #1b5e20; }
+        .quiz-option.wrong { background:#ef9a9a !important; border-color:#c62828; text-decoration: line-through; }
+        .quiz-option.show-correct { background:#a5d6a7 !important; border-color:#2e7d32; }
+        .quiz-score { font-size:1.3em; font-weight:bold; color:var(--accent-color); margin-top:15px; }
+        #quiz-progress { font-weight:bold; color:var(--secondary-text-color); margin-bottom:8px; }
+        .quiz-feedback { font-size:1.4em; font-weight:bold; margin-top:10px; min-height:1.4em; }
+        .quiz-feedback.correct { color:#2e7d32; }
+        .quiz-feedback.wrong { color:#c62828; }
+        .confetti-piece { position:absolute; top:10%; width:8px; height:8px; opacity:0.95; pointer-events:none; animation: confetti-fall 1.1s ease-out forwards; }
+        @keyframes confetti-fall { to { transform: translate(var(--x), 200px) rotate(720deg); opacity:0; } }
+
+        @media (max-width: 700px) {
+            body { padding: 10px; }
+            .container { padding: 20px 15px; border-radius: 18px; border-width: 5px; }
+            h1 { font-size: 1.7em; }
+            h3 { font-size: 1.2em; padding: 10px; }
+            .speech-controls { padding: 10px; gap: 10px; }
+            .control-group { font-size: 0.9em; }
+            th, td { padding: 8px 6px; font-size: 0.9em; }
+            .play-btn { padding: 10px 18px; font-size: 1em; width: 100%; }
+            .reading-paragraph { padding: 10px; }
+            .english-sentence { font-size: 1.05em; }
+            .floating-stop-btn { width: 52px; height: 52px; font-size: 1.3em; bottom: 15px; right: 15px; }
+        }
+        @media (max-width: 420px) {
+            th, td { padding: 6px 4px; font-size: 0.8em; }
+            h1 { font-size: 1.4em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 id="main-title">📚 Loading...</h1>
+    <h2 id="sub-title"></h2>
+
+    <div class="speech-controls">
+        <div class="control-group"><label>🗣️ اللكنة:</label>
+            <select id="voice-select"><option value="en-US">American (US) 🇺🇸</option><option value="en-GB">British (UK) 🇬🇧</option></select>
+        </div>
+        <div class="control-group"><label>⚡ السرعة:</label>
+            <input type="range" id="speed-slider" min="0.5" max="1.2" value="0.9" step="0.1">
+            <span id="speed-value">0.9x</span>
+        </div>
+        <div class="theme-switcher">
+            <label>🎨</label>
+            <span class="theme-dot active" data-theme="green" style="background:#2e7d32;"></span>
+            <span class="theme-dot" data-theme="blue" style="background:#1565c0;"></span>
+            <span class="theme-dot" data-theme="orange" style="background:#ef6c00;"></span>
+        </div>
+    </div>
+
+    <button id="play-all-vocab-btn" class="play-btn">▶️ نطق جميع الكلمات والأفعال</button>
+
+    <h3 id="vocab-title">📚 I. Main Vocabulary (المفردات الأساسية)</h3>
+    <div class="table-wrap"><table id="main-vocab"><tbody></tbody></table></div>
+
+    <h3 id="extra-title">➕ II. Extra Vocabulary (مفردات إضافية)</h3>
+    <div class="table-wrap"><table id="extra-vocab"><tbody></tbody></table></div>
+
+    <h3 id="expr-title">🔗 III. Expressions and Phrases (تعبيرات وعبارات)</h3>
+    <div class="table-wrap"><table id="expressions"><tbody></tbody></table></div>
+
+    <h3 id="verbs-title">🔄 IV. Conjugation of Verbs (تصريف الأفعال)</h3>
+    <div class="table-wrap">
+        <table id="verbs">
+            <thead><tr><th>Present (مضارع)</th><th>Past (ماضي)</th><th>المعنى</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <h3 id="sentences-title">🗣️ V. Main Points & Key Sentences (النقاط الرئيسية)</h3>
+    <div class="table-wrap"><table id="key-sentences"><tbody></tbody></table></div>
+
+    <h3 id="story-title">📖 VI. Reading: Where Life Flows</h3>
+    <button id="play-all-story-btn" class="play-btn">▶️ نطق الحوار كاملاً</button>
+    <div id="story-container" style="text-align:left; border: 2px solid var(--accent-color); padding: 20px; border-radius: 15px; margin-top:10px;"></div>
+
+    <h3 id="quiz-title">📝 VII. Quick Quiz (اختبار سريع)</h3>
+    <div id="quiz-progress"></div>
+    <div id="quiz-container"></div>
+    <div id="quiz-feedback" class="quiz-feedback"></div>
+    <div id="quiz-score" class="quiz-score"></div>
+    <button id="quiz-reset-btn" class="play-btn" style="display:none;">🔄 إعادة الاختبار</button>
+</div>
+
+<button id="stop-btn" class="floating-stop-btn" title="إيقاف النطق">⏹️</button>
+
+<script>
+    // ============================================================
+    // 🟢 Lesson Data: Prim 5, Unit 1, Lesson 1: Life Along the Nile
+    // ============================================================
+    const lessonData = {
+        meta: {
+            mainTitle: "🌊 Prim 5 - Unit 1: Life Along the Nile",
+            subTitle: "Lesson 1: Life Along the Nile",
+            vocabTitle: "📚 I. Main Vocabulary (المفردات الأساسية)",
+            extraTitle: "➕ II. Extra Vocabulary (مفردات إضافية)",
+            exprTitle: "🔗 III. Expressions and Phrases (تعبيرات وعبارات)",
+            verbsTitle: "🔄 IV. Conjugation of Verbs (تصريف الأفعال)",
+            sentencesTitle: "🗣️ V. Main Points & Key Sentences (النقاط الرئيسية)",
+            storyTitle: "📖 VI. Reading: Where Life Flows",
+            quizTitle: "📝 VII. Quick Quiz (اختبار سريع)",
+            playAllVocab: "▶️ نطق جميع الكلمات والأفعال",
+            playAllStory: "▶️ نطق الحوار كاملاً"
+        },
+
+        // ===== MAIN VOCABULARY (5 كلمات من الصورة 1) =====
+        vocabMain: [
+            {en: "water weeds", ar: "الأعشاب المائية"},
+            {en: "hunt", ar: "يصطاد/بصطاد"},
+            {en: "The Nile River", ar: "نهر النيل"},
+            {en: "insects", ar: "حشرات"},
+            {en: "crocodile", ar: "تمساح"}
+        ],
+
+        // ===== EXTRA VOCABULARY (الصفات + المفردات الإضافية من الصورة 1) =====
+        vocabExtra: [
+            {en: "strong (adj)", ar: "قوي"},
+            {en: "colorful (adj)", ar: "ملون"},
+            {en: "scary (adj)", ar: "مخيف"},
+            {en: "tiny (adj)", ar: "صغير جداً"},
+            {en: "large (adj)", ar: "كبير"},
+            {en: "different (adj)", ar: "مختلف"},
+            {en: "creatures", ar: "مخلوقات/كائنات"},
+            {en: "role", ar: "دور/وظيفة"},
+            {en: "humans", ar: "البشر"},
+            {en: "birds", ar: "الطيور"},
+            {en: "plants", ar: "نباتات"}
+        ],
+
+        // ===== EXPRESSIONS AND PHRASES (5 عبارات من الصورة 1) =====
+        expressions: [
+            {en: "home to", ar: "موطن لـ"},
+            {en: "play an important role", ar: "يقوم بدور هام"},
+            {en: "kings of the Nile", ar: "ملوك النيل"},
+            {en: "along the Nile", ar: "على امتداد النيل"},
+            {en: "What about ... ?", ar: "ماذا عن ...؟"}
+        ],
+
+        // ===== CONJUGATION OF VERBS (8 أفعال من الصورة 1) =====
+        verbs: [
+            // Regular
+            {p: "survive", s: "survived", ar: "يبقى على قيد الحياة"},
+            {p: "affect", s: "affected", ar: "يؤثر على"},
+            {p: "protect", s: "protected", ar: "يحمي"},
+            {p: "flow", s: "flowed", ar: "يتدفق"},
+            // Irregular
+            {p: "come", s: "came", ar: "يأتي"},
+            {p: "find", s: "found", ar: "يجد"},
+            {p: "keep", s: "kept", ar: "يحافظ"},
+            {p: "know", s: "knew", ar: "يعرف"}
+        ],
+
+        // ===== KEY SENTENCES (النقاط الرئيسية الـ 6 من الصورة 1) =====
+        keySentences: [
+            {en: "The small fish in the Nile River are so colorful.", ar: "الأسماك الصغيرة في نهر النيل رائعة الألوان."},
+            {en: "The small fish eat water weeds.", ar: "تأكل الأسماك الصغيرة الأعشاب المائية."},
+            {en: "Birds eat small fish, insects, and even plants near the river.", ar: "تأكل الطيور الأسماك الصغيرة والحشرات وحتى النباتات القريبة من النهر."},
+            {en: "Big fish eat smaller fish, insects and tiny creatures in the water.", ar: "تأكل الأسماك الكبيرة الأسماك الأصغر والحشرات والكائنات الصغيرة في الماء."},
+            {en: "Crocodiles are the kings of the Nile.", ar: "التماسيح هي ملوك النيل."},
+            {en: "Crocodiles are very strong and scary.", ar: "التماسيح قوية ومخيفة للغاية."}
+        ],
+
+        // ===== THE STORY (حوار أحمد وليلى مقسم على سطور من الصورة 2) =====
+        story: [
+            [{en: "Look at the small fish in the Nile River! They are so colorful.", ar: "انظر إلى الأسماك الصغيرة في نهر النيل! إنها ملونة."}],
+            [{en: "Yes! Do you know that small fish eat plants in the water? These are called water weeds.", ar: "أجل! هل تعلم أن الأسماك الصغيرة تأكل النباتات في الماء؟ تسمى الأعشاب المائية."}],
+            [{en: "That's interesting! What about birds - what do they eat?", ar: "هذا مثير للاهتمام! وماذا عن الطيور - ماذا تأكل؟"}],
+            [{en: "Birds eat small fish, insects, and even plants near the river.", ar: "تأكل الطيور الأسماك الصغيرة والحشرات وحتى النباتات القريبة من النهر."}],
+            [{en: "Wow! What about big fish?", ar: "رائع! ماذا عن الأسماك الكبيرة؟"}],
+            [{en: "They eat smaller fish, insects, and tiny creatures in the water.", ar: "تأكل الأسماك الكبيرة الأسماك الأصغر والحشرات والمخلوقات الصغيرة في الماء."}],
+            [{en: "And crocodiles - what do they eat?", ar: "والتماسيح - ماذا يأكلون؟"}],
+            [{en: "They eat fish, birds, and sometimes larger animals that come near the water.", ar: "تأكل التماسيح الأسماك والطيور وأحياناً الحيوانات الأكبر حجماً التي تقترب من الماء."}],
+            [{en: "Huge crocodiles are scary! Do any animals hunt them?", ar: "التماسيح الضخمة مخيفة! هل يصطادها أي حيوان؟"}],
+            [{en: "Not really - they're the kings of the Nile!", ar: "ليس تماماً - إنهم ملوك النيل!"}],
+            [{en: "It's amazing how all animals in the river find food to survive.", ar: "من المدهش كيف تجد جميع الحيوانات في النهر طعامها للبقاء على قيد الحياة."}],
+            [{en: "Each animal plays an important role - that's why we must protect the river.", ar: "لكل حيوان دور هام - ولهذا السبب يجب علينا حماية النهر."}]
+        ]
+    };
+
+    // ============================================================
+    // ⚙️ 2. محرك القالب (نفس المحرك السابق تماماً)
+    // ============================================================
+    const synth = window.speechSynthesis;
+    // ===== Enhanced Voice Selection =====
+    let availableVoices = [];
+    let voiceLoadAttempt = 0;
+    const MAX_VOICE_ATTEMPTS = 6;
+    const RETRY_DELAYS = [0, 150, 400, 800, 1500, 2500];
+
+    function loadAvailableVoices() {
+        const vList = synth.getVoices();
+        if (vList.length) {
+            availableVoices = vList;
+            voiceLoadAttempt = 0;
+            populateVoiceDropdown();
+            return;
+        }
+        if (voiceLoadAttempt < MAX_VOICE_ATTEMPTS) {
+            const delay = RETRY_DELAYS[voiceLoadAttempt] || 2500;
+            voiceLoadAttempt++;
+            setTimeout(loadAvailableVoices, delay);
+        }
+    }
+
+    function voiceQualityScore(v) {
+        const name = (v.name || '').toLowerCase();
+        let score = 0;
+        if (name.includes('google')) score += 30;
+        if (name.includes('microsoft')) score += 25;
+        if (name.includes('samantha')) score += 20;
+        if (v.localService) score += 2;
+        return score;
+    }
+
+    function populateVoiceDropdown() {
+        const vs = document.getElementById('voice-select');
+        if (!vs || !availableVoices.length) return;
+        const normLang = (l) => String(l||'').replace('_','-').toLowerCase();
+        const enVoices = availableVoices.filter(v => {
+            const lang = normLang(v.lang);
+            return lang.startsWith('en-us') || lang.startsWith('en-gb');
+        });
+        if (!enVoices.length) return; // keep static options if no voices found
+        enVoices.sort((a,b) => voiceQualityScore(b) - voiceQualityScore(a));
+        const savedLang = localStorage.getItem('lesson_voice') || 'en-US';
+        const savedVoiceURI = localStorage.getItem('lesson_voiceURI') || '';
+        vs.innerHTML = '';
+        enVoices.forEach(v => {
+            const lang = String(v.lang||'').replace('_','-');
+            const isUS = lang.toLowerCase().startsWith('en-us');
+            const flag = isUS ? '🇺🇸 American' : '🇬🇧 British';
+            const opt = document.createElement('option');
+            opt.value = v.voiceURI;
+            opt.dataset.lang = lang;
+            opt.textContent = flag + ' — ' + v.name;
+            vs.appendChild(opt);
+        });
+        // Restore saved selection
+        const savedOpt = [...vs.options].find(o => o.value === savedVoiceURI) ||
+                         [...vs.options].find(o => o.dataset.lang.toLowerCase().startsWith(savedLang.toLowerCase()));
+        if (savedOpt) vs.value = savedOpt.value;
+    }
+
+    function getBestVoice() {
+        const vs = document.getElementById('voice-select');
+        if (!vs) return null;
+        // If dropdown has voiceURI values (populated dynamically)
+        const selectedURI = vs.value;
+        const found = availableVoices.find(v => v.voiceURI === selectedURI);
+        if (found) return found;
+        // Fallback: match by lang code
+        const targetLang = vs.options[vs.selectedIndex]?.dataset?.lang || vs.value || 'en-US';
+        const normTarget = targetLang.toLowerCase().replace('_','-');
+        const matches = availableVoices.filter(v => {
+            const vl = String(v.lang||'').replace('_','-').toLowerCase();
+            return vl === normTarget || vl.startsWith(normTarget + '-') || vl.startsWith(normTarget.split('-')[0] + '-' + normTarget.split('-')[1]);
+        });
+        if (matches.length) {
+            matches.sort((a,b) => voiceQualityScore(b) - voiceQualityScore(a));
+            return matches[0];
+        }
+        return null;
+    }
+
+    function getSelectedLang() {
+        const vs = document.getElementById('voice-select');
+        if (!vs) return 'en-US';
+        const opt = vs.options[vs.selectedIndex];
+        return (opt && opt.dataset && opt.dataset.lang) || vs.value || 'en-US';
+    }
+
+    // Load voices
+    loadAvailableVoices();
+    if (synth.onvoiceschanged !== undefined) synth.onvoiceschanged = loadAvailableVoices;
+    // ===== End Enhanced Voice Selection =====
+
+    let speechQueue = [];
+    let isPlaying = false;
+    let currentSpeakingElement = null;
+
+    function loadPrefs() {
+        try {
+            const voice = localStorage.getItem('lesson_voice') || 'en-US';
+            const speed = localStorage.getItem('lesson_speed') || '0.9';
+            const theme = localStorage.getItem('lesson_theme') || 'green';
+            document.getElementById('voice-select').value = voice;
+            document.getElementById('speed-slider').value = speed;
+            document.getElementById('speed-value').innerText = speed + 'x';
+            applyTheme(theme);
+            document.querySelectorAll('.theme-dot').forEach(d => {
+                d.classList.toggle('active', d.dataset.theme === theme);
+            });
+        } catch(e) {}
+    }
+    function savePrefs() {
+        try {
+            localStorage.setItem('lesson_voice', getSelectedLang());
+            localStorage.setItem('lesson_voiceURI', document.getElementById('voice-select').value);
+            localStorage.setItem('lesson_speed', document.getElementById('speed-slider').value);
+            localStorage.setItem('lesson_theme', document.querySelector('.theme-dot.active')?.dataset?.theme || 'green');
+        } catch(e) {}
+    }
+
+    const themes = {
+        green:  { accent:'#2e7d32', highlight:'#c8e6c9', speak:'#1b5e20', play:'#4caf50', border:'#81c784' },
+        blue:   { accent:'#1565c0', highlight:'#bbdefb', speak:'#0d47a1', play:'#1e88e5', border:'#64b5f6' },
+        orange: { accent:'#ef6c00', highlight:'#ffe0b2', speak:'#e65100', play:'#fb8c00', border:'#ffb74d' }
+    };
+    function applyTheme(t) {
+        const theme = themes[t];
+        if(!theme) return;
+        const root = document.documentElement.style;
+        root.setProperty('--accent-color', theme.accent);
+        root.setProperty('--highlight-color', theme.highlight);
+        root.setProperty('--speak-highlight', theme.speak);
+        root.setProperty('--play-all-btn', theme.play);
+        root.setProperty('--border-color', theme.border);
+    }
+
+    function cancelSpeech() {
+        synth.cancel();
+        isPlaying = false;
+        speechQueue = [];
+        if (currentSpeakingElement) {
+            currentSpeakingElement.classList.remove('speaking-highlight');
+            currentSpeakingElement = null;
+        }
+    }
+
+    function speakText(text, element) {
+        if (!text) return;
+        cancelSpeech();
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = getSelectedLang();
+        { const _v = getBestVoice(); if (_v) utter.voice = _v; }
+        utter.rate = parseFloat(document.getElementById('speed-slider').value);
+        
+        if (element) {
+            element.classList.add('speaking-highlight');
+            currentSpeakingElement = element;
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            utter.onend = () => {
+                if (currentSpeakingElement) {
+                    currentSpeakingElement.classList.remove('speaking-highlight');
+                    currentSpeakingElement = null;
+                }
+                isPlaying = false;
+            };
+            utter.onerror = () => {
+                if (currentSpeakingElement) {
+                    currentSpeakingElement.classList.remove('speaking-highlight');
+                    currentSpeakingElement = null;
+                }
+                isPlaying = false;
+            };
+        }
+        synth.speak(utter);
+        isPlaying = true;
+    }
+
+    function playQueue(elements) {
+        cancelSpeech();
+        if (!elements || elements.length === 0) return;
+        let index = 0;
+        speechQueue = [...elements];
+        isPlaying = true;
+
+        function next() {
+            if (!isPlaying || index >= speechQueue.length) {
+                isPlaying = false;
+                return;
+            }
+            const el = speechQueue[index];
+            const text = el.innerText.trim();
+            if (!text) { index++; next(); return; }
+
+            const utter = new SpeechSynthesisUtterance(text);
+            utter.lang = getSelectedLang();
+        { const _v = getBestVoice(); if (_v) utter.voice = _v; }
+            utter.rate = parseFloat(document.getElementById('speed-slider').value);
+            
+            el.classList.add('speaking-highlight');
+            currentSpeakingElement = el;
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            utter.onend = () => {
+                if (currentSpeakingElement) {
+                    currentSpeakingElement.classList.remove('speaking-highlight');
+                    currentSpeakingElement = null;
+                }
+                index++;
+                if (isPlaying) next();
+                else isPlaying = false;
+            };
+            utter.onerror = () => {
+                if (currentSpeakingElement) {
+                    currentSpeakingElement.classList.remove('speaking-highlight');
+                    currentSpeakingElement = null;
+                }
+                index++;
+                if (isPlaying) next();
+                else isPlaying = false;
+            };
+            synth.speak(utter);
+        }
+        next();
+    }
+
+    function buildTableData(data, tbodyId) {
+        const tbody = document.querySelector(`#${tbodyId} tbody`);
+        if (!tbody) return [];
+        tbody.innerHTML = '';
+        const elements = [];
+        for (let i = 0; i < data.length; i += 2) {
+            const tr = document.createElement('tr');
+            [i, i+1].forEach(idx => {
+                if (data[idx]) {
+                    const tdEn = document.createElement('td');
+                    tdEn.className = 'english-cell';
+                    const span = document.createElement('span');
+                    span.className = 'vocab-element';
+                    span.innerText = data[idx].en;
+                    span.onclick = () => speakText(data[idx].en, span);
+                    tdEn.appendChild(span);
+                    
+                    const tdAr = document.createElement('td');
+                    tdAr.className = 'arabic-cell';
+                    tdAr.innerText = data[idx].ar;
+                    tr.append(tdEn, tdAr);
+                    elements.push(span);
+                }
+            });
+            tbody.appendChild(tr);
+        }
+        return elements;
+    }
+
+    function initLesson() {
+        const meta = lessonData.meta;
+        document.getElementById('main-title').innerText = meta.mainTitle || '📚 Lesson';
+        document.getElementById('sub-title').innerText = meta.subTitle || '';
+        document.getElementById('vocab-title').innerText = meta.vocabTitle || '📚 Vocabulary';
+        document.getElementById('extra-title').innerText = meta.extraTitle || '➕ Extra';
+        document.getElementById('expr-title').innerText = meta.exprTitle || '🔗 Expressions';
+        document.getElementById('verbs-title').innerText = meta.verbsTitle || '🔄 Verbs';
+        document.getElementById('sentences-title').innerText = meta.sentencesTitle || '🗣️ Sentences';
+        document.getElementById('story-title').innerText = meta.storyTitle || '📖 Reading';
+        document.getElementById('quiz-title').innerText = meta.quizTitle || '📝 Quiz';
+        document.getElementById('play-all-vocab-btn').innerText = meta.playAllVocab || '▶️ Play All';
+        document.getElementById('play-all-story-btn').innerText = meta.playAllStory || '▶️ Play Story';
+
+        let allSpeakElements = [];
+
+        const mainEls = buildTableData(lessonData.vocabMain, 'main-vocab');
+        allSpeakElements = allSpeakElements.concat(mainEls);
+
+        const extraEls = buildTableData(lessonData.vocabExtra, 'extra-vocab');
+        allSpeakElements = allSpeakElements.concat(extraEls);
+
+        const exprTbody = document.querySelector('#expressions tbody');
+        exprTbody.innerHTML = '';
+        lessonData.expressions.forEach(e => {
+            const tr = document.createElement('tr');
+            const tdEn = document.createElement('td');
+            tdEn.className = 'english-cell';
+            const span = document.createElement('span');
+            span.className = 'vocab-element';
+            span.innerText = e.en;
+            span.onclick = () => speakText(e.en, span);
+            tdEn.appendChild(span);
+            const tdAr = document.createElement('td');
+            tdAr.className = 'arabic-cell';
+            tdAr.innerText = e.ar;
+            tr.append(tdEn, tdAr);
+            exprTbody.appendChild(tr);
+            allSpeakElements.push(span);
+        });
+
+        const vTbody = document.querySelector('#verbs tbody');
+        vTbody.innerHTML = '';
+        lessonData.verbs.forEach(v => {
+            const tr = document.createElement('tr');
+            const tdP = document.createElement('td');
+            tdP.className = 'english-cell';
+            const spanP = document.createElement('span');
+            spanP.className = 'vocab-element';
+            spanP.innerText = v.p;
+            spanP.onclick = () => speakText(v.p, spanP);
+            tdP.appendChild(spanP);
+
+            const tdS = document.createElement('td');
+            tdS.className = 'english-cell';
+            const spanS = document.createElement('span');
+            spanS.className = 'vocab-element';
+            spanS.innerText = v.s;
+            spanS.onclick = () => speakText(v.s, spanS);
+            tdS.appendChild(spanS);
+
+            const tdAr = document.createElement('td');
+            tdAr.className = 'arabic-cell';
+            tdAr.innerText = v.ar;
+            tr.append(tdP, tdS, tdAr);
+            vTbody.appendChild(tr);
+            allSpeakElements.push(spanP, spanS);
+        });
+
+        const sTbody = document.querySelector('#key-sentences tbody');
+        sTbody.innerHTML = '';
+        lessonData.keySentences.forEach(k => {
+            const tr = document.createElement('tr');
+            const tdEn = document.createElement('td');
+            tdEn.className = 'english-cell';
+            const span = document.createElement('span');
+            span.className = 'vocab-element';
+            span.innerText = k.en;
+            span.onclick = () => speakText(k.en, span);
+            tdEn.appendChild(span);
+            const tdAr = document.createElement('td');
+            tdAr.className = 'arabic-cell';
+            tdAr.innerText = k.ar;
+            tr.append(tdEn, tdAr);
+            sTbody.appendChild(tr);
+            allSpeakElements.push(span);
+        });
+
+        const sBox = document.getElementById('story-container');
+        sBox.innerHTML = '';
+        const storySentences = [];
+        lessonData.story.forEach(paragraph => {
+            const partDiv = document.createElement('div');
+            partDiv.className = 'reading-paragraph';
+            paragraph.forEach(sentence => {
+                const line = document.createElement('div');
+                const sentSpan = document.createElement('span');
+                sentSpan.className = 'english-sentence';
+                sentSpan.innerText = sentence.en;
+                sentSpan.onclick = () => speakText(sentence.en, sentSpan);
+                
+                const arSpan = document.createElement('span');
+                arSpan.className = 'arabic-translation';
+                arSpan.innerText = sentence.ar;
+                
+                line.appendChild(sentSpan);
+                line.appendChild(arSpan);
+                partDiv.appendChild(line);
+                storySentences.push(sentSpan);
+                allSpeakElements.push(sentSpan);
+            });
+            sBox.appendChild(partDiv);
+        });
+
+        document.getElementById('play-all-vocab-btn').onclick = () => {
+            const vocabEls = allSpeakElements.filter(el => !el.closest('#story-container'));
+            playQueue(vocabEls);
+        };
+        document.getElementById('play-all-story-btn').onclick = () => {
+            playQueue(storySentences);
+        };
+        document.getElementById('stop-btn').onclick = cancelSpeech;
+
+        buildQuiz();
+        document.getElementById('quiz-reset-btn').onclick = buildQuiz;
+
+        document.getElementById('voice-select').onchange = savePrefs;
+        document.getElementById('speed-slider').oninput = () => {
+            document.getElementById('speed-value').innerText = document.getElementById('speed-slider').value + 'x';
+            savePrefs();
+        };
+        document.querySelectorAll('.theme-dot').forEach(dot => {
+            dot.onclick = () => {
+                document.querySelectorAll('.theme-dot').forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+                applyTheme(dot.dataset.theme);
+                savePrefs();
+            };
+        });
+    }
+
+    let quizPool = [], quizItems = [], quizIndex = 0, quizScore = 0;
+
+    function shuffle(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function fireConfetti(container) {
+        const colors = ['#e53935', '#fb8c00', '#fdd835', '#43a047', '#1e88e5', '#8e24aa'];
+        for (let i = 0; i < 28; i++) {
+            const conf = document.createElement('div');
+            conf.className = 'confetti-piece';
+            conf.style.left = (35 + Math.random() * 30) + '%';
+            conf.style.background = colors[Math.floor(Math.random() * colors.length)];
+            conf.style.animationDelay = (Math.random() * 0.25) + 's';
+            conf.style.setProperty('--x', (Math.random() * 220 - 110) + 'px');
+            container.appendChild(conf);
+            setTimeout(() => conf.remove(), 1400);
+        }
+    }
+
+    function buildQuiz() {
+        const allVocab = [...lessonData.vocabMain, ...lessonData.vocabExtra];
+        quizPool = shuffle([...allVocab]);
+        quizItems = quizPool.slice(0, Math.min(8, quizPool.length));
+        quizIndex = 0; quizScore = 0;
+        document.getElementById('quiz-score').innerText = '';
+        document.getElementById('quiz-reset-btn').style.display = 'none';
+        showQuizQuestion();
+    }
+
+    function showQuizQuestion() {
+        const quizBox = document.getElementById('quiz-container');
+        const progress = document.getElementById('quiz-progress');
+        const feedback = document.getElementById('quiz-feedback');
+        const scoreDiv = document.getElementById('quiz-score');
+        feedback.innerText = ''; feedback.className = 'quiz-feedback';
+        quizBox.innerHTML = '';
+
+        if (quizIndex >= quizItems.length) {
+            progress.innerText = '';
+            scoreDiv.innerText = `🏆 انتهى الاختبار! نتيجتك: ${quizScore} / ${quizItems.length}`;
+            document.getElementById('quiz-reset-btn').style.display = 'inline-block';
+            return;
+        }
+
+        progress.innerText = `سؤال ${quizIndex + 1} من ${quizItems.length}`;
+        const item = quizItems[quizIndex];
+        const distractors = shuffle(quizPool.filter(p => p.en !== item.en)).slice(0, 3).map(p => p.ar);
+        const options = shuffle([item.ar, ...distractors]);
+
+        const qDiv = document.createElement('div'); qDiv.className = 'quiz-question'; qDiv.style.position = 'relative';
+        qDiv.innerHTML = `<p class="q-text">ما معنى كلمة "<span style="color:var(--accent-color)">${item.en}</span>"؟</p>`;
+        const optWrap = document.createElement('div'); optWrap.className = 'quiz-options';
+        let locked = false;
+
+        options.forEach(opt => {
+            const optBtn = document.createElement('div'); 
+            optBtn.className = 'quiz-option'; 
+            optBtn.innerText = opt;
+            optBtn.onclick = () => {
+                if (locked) return;
+                locked = true;
+                document.querySelectorAll('.quiz-option').forEach(b => b.style.pointerEvents = 'none');
+
+                if (opt === item.ar) {
+                    optBtn.classList.add('correct');
+                    feedback.innerText = '🎉 إجابة صحيحة!'; feedback.className = 'quiz-feedback correct';
+                    fireConfetti(qDiv);
+                    speakText('Correct!');
+                    quizScore++;
+                    setTimeout(() => { quizIndex++; showQuizQuestion(); }, 1200);
+                } else {
+                    optBtn.classList.add('wrong');
+                    document.querySelectorAll('.quiz-option').forEach(b => {
+                        if (b.innerText === item.ar) {
+                            b.classList.add('show-correct');
+                        }
+                    });
+                    feedback.innerText = `❌ خطأ! الإجابة الصحيحة: "${item.ar}"`; 
+                    feedback.className = 'quiz-feedback wrong';
+                    speakText('Wrong!');
+                    setTimeout(() => { quizIndex++; showQuizQuestion(); }, 2000);
+                }
+            };
+            optWrap.appendChild(optBtn);
+        });
+        qDiv.appendChild(optWrap);
+        quizBox.appendChild(qDiv);
+    }
+
+    window.onload = () => {
+        loadPrefs();
+        initLesson();
+    };
+</script>
+</body>
+</html>
