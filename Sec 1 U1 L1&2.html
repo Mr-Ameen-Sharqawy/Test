@@ -1,0 +1,684 @@
+﻿<div style="position:sticky; top:0; background-color:#ffffff; padding:15px 0; text-align:center; font-family:Arial, sans-serif; box-shadow:0 4px 6px rgba(0,0,0,0.1); z-index:1000; display:flex; flex-direction:column; align-items:center;">
+  <h2 style="margin:2px 0; color:#333; text-align:center;">عينات مجانية </h2>
+  <div style="margin-top:8px;">
+<h2 style="margin:2px 0; color:#333; text-align:center;">يمكنك الشراء من خلال </h2>
+  <div style="margin-top:8px;">
+    <a href="tel:+201279217092" style="display:inline-block; background-color:#007BFF; color:#fff; padding:8px 16px; margin:3px; border-radius:5px; text-decoration:none; font-weight:bold;">
+      📞 01279217092
+    </a>
+    <a href="https://wa.me/+201279217092" target="_blank" style="display:inline-block; background-color:#25D366; color:#fff; padding:8px 16px; margin:3px; border-radius:5px; text-decoration:none; font-weight:bold;">
+      💬 تواصل عبر الواتس
+    </a>
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Unit 1: Egypt's Heritage - Lessons 1 & 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --A: #1e3a8a; --A2: #1e40af; --blue4: #dbeafe; --blue5: #f8fafc;
+            --text: #1E293B; --text2: #64748B; --card: #ffffff; --border: #e2e8f0;
+            --bg: #f1f5f9; --radius: 12px; --stop: #ef4444; --pause: #94a3b8;
+            --highlight-bg: rgba(30, 58, 138, 0.08);
+            --word-highlight: #fde047;
+            --fab-bg: #1e293b; --fab-text: #ffffff;
+        }
+        [data-theme="ocean"] {
+            --A: #0e7490; --A2: #0891b2; --blue4: #cffafe; --blue5: #f0fdfa;
+            --text: #1E293B; --text2: #64748B; --card: #ffffff; --border: #e2e8f0;
+            --bg: #f1f5f9; --stop: #ef4444; --highlight-bg: rgba(14, 116, 144, 0.08);
+            --fab-bg: #0e7490; --fab-text: #ffffff;
+        }
+        [data-theme="slate"] {
+            --A: #334155; --A2: #475569; --blue4: #e2e8f0; --blue5: #f8fafc;
+            --text: #0f172a; --text2: #475569; --card: #ffffff; --border: #cbd5e1;
+            --bg: #f1f5f9; --stop: #ef4444; --highlight-bg: rgba(51, 65, 85, 0.1);
+            --fab-bg: #1e293b; --fab-text: #ffffff;
+        }
+        [data-theme="dark"] {
+            --A: #2dd4bf; --A2: #0d9488; --blue4: #134e4a; --blue5: #0f172a;
+            --text: #f8fafc; --text2: #94a3b8; --card: #1e293b; --border: #334155;
+            --bg: #0f172a; --stop: #f87171; --pause: #64748b; --highlight-bg: rgba(45, 212, 191, 0.15);
+            --word-highlight: #facc15; --fab-bg: #facc15; --fab-text: #1e293b;
+        }
+        *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+        body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:100px;overflow-x:hidden;transition:background .3s,color .3s;}
+        .hero{color:#fff;text-align:center;padding:32px 20px 26px;margin-bottom:24px;background:linear-gradient(135deg, #0f172a, var(--A2)); box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+        .hero .emoji-big{font-size:3rem;display:block;margin-bottom:8px;}
+        .hero h1{font-size:1.6rem;font-weight:900;letter-spacing:0.5px;}
+        .hero .sub{font-size:.95rem;opacity:.85;margin-top:5px;font-family:'Cairo',sans-serif;font-weight:600;}
+        .toolbar{max-width:840px;margin:0 auto 24px;padding:0 16px;text-align:center;}
+        .toolbar-inner{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 20px;box-shadow:0 4px 12px rgba(0,0,0,.06);}
+        .toolbar label{font-weight:800;color:var(--A);font-size:13px;}
+        input[type=range]{width:90px;accent-color:var(--A);}
+        .rate-badge{font-weight:900;font-size:13px;color:var(--A);min-width:34px;}
+        select{padding:6px 10px;border-radius:6px;border:1px solid var(--border);font-weight:600;background:var(--card);color:var(--text);}
+        .theme-switcher{display:flex;align-items:center;gap:6px;margin-left:auto;}
+        .theme-btn{-webkit-appearance:none;appearance:none;border:2px solid transparent;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;color:#fff;letter-spacing:.5px;transition:all .2s;}
+        .theme-btn.t-teal{background:linear-gradient(135deg,#0f766e,#2dd4bf);}
+        .theme-btn.t-ocean{background:linear-gradient(135deg,#0e7490,#06b6d4);}
+        .theme-btn.t-slate{background:linear-gradient(135deg,#334155,#94a3b8);}
+        .theme-btn.t-dark{background:linear-gradient(135deg,#1e293b,#475569);color:#e2e8f0;}
+        .theme-btn.active{border-color:#fff;box-shadow:0 0 0 2px currentColor;transform:scale(1.06);}
+        .container{max-width:840px;margin:auto;padding:0 16px;}
+        .section-block{background:var(--card);border-radius:var(--radius);margin-bottom:22px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04);border:1px solid var(--border);}
+        .sec-title{color:#fff;font-size:.8rem;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:12px 20px;display:flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--A),var(--A2));}
+        .sec-title::before{content:"";display:inline-block;width:6px;height:6px;background:rgba(255,255,255,.5);border-radius:50%;flex-shrink:0;}
+        .sec-body{padding:18px;}
+        .sec-play-bar{display:flex;gap:7px;margin-bottom:18px;flex-wrap:wrap;align-items:center;}
+        .big-btn{-webkit-appearance:none;appearance:none;border:none;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:800;cursor:pointer;color:#fff;display:inline-flex;align-items:center;gap:5px;transition:transform .12s;font-family:'Nunito',sans-serif;}
+        .big-btn:active{transform:scale(.95);}
+        .big-btn.pause-btn{background:var(--pause);}
+        .big-btn.stop-btn{background:var(--stop);}
+        .big-btn.play-all-btn{background:linear-gradient(135deg, var(--A), var(--A2)); margin-left: 12px;}
+        .info-box{background:var(--blue5);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px;}
+        .info-title{display:flex;align-items:center;gap:6px;font-weight:900;font-size:.78rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--A2);}
+        .vocab{display:flex;flex-wrap:wrap;gap:8px;}
+        .pill{padding:10px 14px;border-radius:6px;background:var(--card);border:1px solid var(--blue4);text-align:center;cursor:pointer;flex:1 1 auto;min-width:80px;transition:all .15s;}
+        .pill:active{transform:scale(.96);}
+        .pill .en{font-weight:800;font-size:14px;display:block;color:var(--A);}
+        .pill .tr{font-size:11px;color:var(--text2);font-family:'Cairo',sans-serif;font-weight:600;}
+        .story-card{background:var(--blue5);border:1px solid var(--border);border-left:4px solid var(--A);border-radius:8px;padding:18px;margin-bottom:12px;}
+        .sentence{display:block;cursor:pointer;border-radius:6px;padding:10px 12px;margin-bottom:12px;transition:background .2s;line-height:1.8;font-size:17px;font-weight:600;color:var(--text);background:rgba(255,255,255,0.4);}
+        [data-theme="dark"] .sentence { background: rgba(255,255,255,0.05); }
+        .sentence .word{transition:background 0.15s;border-radius:3px;padding:0 1px;}
+        .sentence .word.highlight{background:var(--word-highlight);}
+        .sentence.active-sent{background:var(--highlight-bg);outline:2px solid var(--A);outline-offset:1px;}
+        .sentence .speaker-label{display:inline-block;font-weight:900;color:var(--A2);margin-right:10px;background:var(--blue4);padding:2px 10px;border-radius:20px;font-size:0.9rem;}
+        .pill.active-sent{background:var(--highlight-bg);outline:2px solid var(--A);outline-offset:1px;}
+        .rule-item.active-sent{background:var(--highlight-bg);outline:2px solid var(--A);outline-offset:1px;}
+        .story-ar{font-family:'Cairo',sans-serif;color:var(--text2);font-size:14px;text-align:right;direction:rtl;margin-top:12px;padding-top:12px;border-top:1px dashed var(--border);font-weight:600;line-height:2;}
+        .rules-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:12px;}
+        .rule-item{display:flex;align-items:flex-start;gap:12px;background:var(--blue5);border:1px solid var(--border);border-radius:6px;padding:12px 14px;cursor:pointer;transition:all .2s;}
+        .rule-item .rule-text{flex:1;}
+        .rule-item .rule-text .en{font-size:15px;font-weight:700;color:var(--text);}
+        .rule-item .rule-text .ar{font-family:'Cairo',sans-serif;font-size:13px;color:var(--text2);text-align:right;direction:rtl;font-weight:600;margin-top:4px;}
+        footer{text-align:center;margin-top:14px;padding:20px;color:var(--text2);font-size:12px;}
+        footer strong{color:var(--A);}
+        .voice-note{font-size:11px;color:#b45309;margin-top:4px;display:block;}
+        .fab-pause{position:fixed;bottom:24px;right:24px;z-index:999;width:56px;height:56px;border-radius:50%;background:var(--fab-bg);color:var(--fab-text);border:none;box-shadow:0 4px 16px rgba(0,0,0,0.2);font-size:24px;display:none;align-items:center;justify-content:center;cursor:pointer;transition:transform 0.2s,opacity 0.2s;}
+        .fab-pause:active{transform:scale(.9);}
+        .fab-pause.show{display:flex;}
+    </style>
+</head>
+<body>
+
+<div class="hero"><span class="emoji-big">🏛️</span><h1>Unit 1: Egypt's Heritage</h1><p class="sub">Sec 3 - Lessons 1 & 2 (Taking Pride in Our Beloved Egypt)</p></div>
+
+<div class="toolbar"><div class="toolbar-inner">
+    <label for="rateRange">Speed</label><input id="rateRange" type="range" min="0.5" max="1.2" step="0.1" value="1"/>
+    <span class="rate-badge" id="rateBadge">1.0x</span>
+    <select id="voiceSelect" style="max-width:180px;"></select>
+    <span id="voiceNote" class="voice-note"></span>
+    <div class="theme-switcher">
+        <button class="theme-btn t-teal" onclick="setTheme('teal',this)">Teal</button>
+        <button class="theme-btn t-ocean" onclick="setTheme('ocean',this)">Ocean</button>
+        <button class="theme-btn t-slate" onclick="setTheme('slate',this)">Slate</button>
+        <button class="theme-btn t-dark" onclick="setTheme('dark',this)">Dark</button>
+    </div>
+    <button class="big-btn play-all-btn" onclick="playAll()">🔊 Play All</button>
+</div></div>
+
+<main class="container">
+    <div id="sections-container"></div>
+</main>
+
+<button class="fab-pause" id="fabPause" onclick="toggleFabPause()" title="إيقاف / استئناف">⏯️</button>
+
+<script>
+function cleanForSpeech(text) {
+    let result = text;
+    result = result.replace(/\([^)]*\)/g, ' '); 
+    result = result.replace(/[→]/g, ' ');      
+    result = result.replace(/\s+/g, ' ').trim(); 
+    return result;
+}
+
+// ===================== البيانات الجديدة للوحدة 1 (مصر) =====================
+
+const keyVocab = [
+    ["civilization (n)", "حضارة"],
+    ["crossroads (n)", "مفترق طرق"],
+    ["crossroads for trade", "مفترق طرق التجارة"],
+    ["heritage (n)", "تراث"],
+    ["identity (n)", "هوية"],
+    ["merchant (n)", "تاجر"],
+    ["monument (n)", "أثر (معلم أثري)"],
+    ["neighborhood (n)", "حي سكني"],
+    ["preserve (v)", "يَحفظ - يَصون"],
+    ["pride (n)", "كبرياء - فخر"],
+    ["proud (adj)", "فخور"],
+    ["restore (v)", "يُعيد إلى حالته الأصلية"],
+    ["trade (n)", "تجارة"]
+];
+
+const accVocab = [
+    ["ancestor (n)", "جَدّ - سلف"],
+    ["archaeologist (n)", "عالم آثار"],
+    ["attraction (n)", "جذب - مزار سياحي"],
+    ["awareness (n)", "وعي"],
+    ["beat - beat - beaten (v)", "ينبض"],
+    ["bridge (n)", "جسر - وسيلة ربط"],
+    ["capable (adj)", "قادر"],
+    ["carve (v)", "يَنحَت"],
+    ["challenge (n-v)", "تحدّي"],
+    ["citizen (n)", "مواطن"],
+    ["contribute (v)", "يساهم"],
+    ["core (n)", "جوهر - لب"],
+    ["culture (n)", "ثقافة"],
+    ["determination (n)", "عزيمة - إصرار"],
+    ["development (n)", "تطوير"],
+    ["economy (n)", "اقتصاد"],
+    ["encourage (v)", "يشجع"],
+    ["gather (v)", "يجمع"],
+    ["generation (n)", "جيل"],
+    ["grain (n)", "حبوب (غلال)"],
+    ["greatness (n)", "عظمة"],
+    ["harmony (n)", "تناغم - انسجام"],
+    ["honor (v-n)", "يُكرّم - تشريف"],
+    ["host (n)", "مُضيف - المُقدم"],
+    ["immense (adj)", "هائل - عظيم"],
+    ["inspiration (n)", "إلهام"],
+    ["inspire (v)", "يلهم"],
+    ["knowledge (n)", "معرفة"],
+    ["lack (n)", "نقص - عدم وجود"],
+    ["lead - led (v)", "يقود - يَقي"],
+    ["legacy (n)", "إرث"],
+    ["papyrus (n)", "ورق البردي"],
+    ["privilege (n)", "شرف - امتياز"],
+    ["progress (v-n)", "يتقدم - التقدم"],
+    ["protector (n)", "حامٍ - مدافع"],
+    ["reconnect (v)", "يعيد الاتصال"],
+    ["record (v)", "يُسجل"],
+    ["remind (v)", "يُذكّر"],
+    ["sacrifice (n-v)", "تضحية - يُضحّي"],
+    ["shape (v)", "يُشكّل"],
+    ["source (n)", "مصدر"],
+    ["spice (n)", "بهار / توابل"],
+    ["Upper Egypt (n)", "صعيد مصر"],
+    ["urban (adj)", "حضري - متعلق بالمدن"],
+    ["value (n)", "قيمة"],
+    ["youth (n)", "الشباب"]
+];
+
+const defsData = [
+    {word: "crossroads (n)", def: "a place where two or more roads meet; it can also mean an important meeting point for people or ideas"},
+    {word: "identity (n)", def: "the qualities, beliefs, history, and culture that make a person, group, or country different from others"},
+    {word: "merchant (n)", def: "a person who buys and sells goods, especially as a job"},
+    {word: "neighborhood (n)", def: "areas of a town or city where people live"},
+    {word: "preserve (v)", def: "to keep something safe and protect it from damage or loss"},
+    {word: "pride (n)", def: "a feeling of happiness and respect because of something good or important"},
+    {word: "proud (adj)", def: "feeling pleased and satisfied because of something good that you, your country, or someone else has done"},
+    {word: "restore (v)", def: "to repair an old building, object, or place and make it look as it did before"},
+    {word: "trade (n)", def: "the activity of buying, selling, or exchanging goods"}
+];
+
+const synData = [
+    {word: "alive (adj)", syn: "living, breathing"},
+    {word: "carved (adj)", syn: "shaped, cut, engraved, sculpted"},
+    {word: "crossroads (n)", syn: "intersection, junction"},
+    {word: "harmony (n)", syn: "coordination, agreement"},
+    {word: "heritage (n)", syn: "legacy, inheritance"},
+    {word: "identity (n)", syn: "character, individuality"},
+    {word: "inspire (v)", syn: "motivate, encourage, stimulate"},
+    {word: "monument (n)", syn: "memorial, statue"},
+    {word: "neighborhood (n)", syn: "area, district"},
+    {word: "preserve (v)", syn: "protect, conserve, keep"},
+    {word: "pride (n)", syn: "satisfaction, dignity"},
+    {word: "restore (v)", syn: "repair, renovate"}
+];
+
+const antData = [
+    {word: "awareness (n)", ant: "ignorance, unawareness"},
+    {word: "determination (n)", ant: "indecision, hesitation"},
+    {word: "harmony (n)", ant: "conflict, disagreement, confusion, disharmony"},
+    {word: "inspire (v)", ant: "discourage, deter"},
+    {word: "knowledge (n)", ant: "ignorance, illiteracy, misunderstanding, unawareness"},
+    {word: "preserve (v)", ant: "destroy, damage, harm, neglect"},
+    {word: "pride (n)", ant: "shame, humility, dishonor"},
+    {word: "restore (v)", ant: "damage, ruin, spoil"}
+];
+
+const collocationsData = [
+    ["face challenges", "يواجه تحديات"],
+    ["fall asleep", "يغفو - ينام"],
+    ["feel the connection", "يشعر بالارتباط"],
+    ["feel pride/proud", "يشعر بالفخر"],
+    ["honor history", "يُكرّم التاريخ"],
+    ["leave a legacy", "يُخلّف إرثاً"],
+    ["play a role (in)", "يلعب دوراً (في)"],
+    ["preserve heritage", "يحمي التراث"],
+    ["take pride (in)", "يفتخر (بـ)"]
+];
+
+const phrasalVerbsData = [
+    ["carve into", "يَنحَت - ينقش على"],
+    ["contribute to + n / -ing", "يساهم في"],
+    ["encourage ... to", "يُشجّع ... على"],
+    ["reconnect with", "يُعيد الاتصال بـ"],
+    ["share ... with", "يُشارك ... مع"],
+    ["welcome ... back (to)", "يُرَحّب بعودة ... (إلى)"]
+];
+
+const derivativesData = [
+    {word: "heritage (n)", forms: ["inherit (v)", "inheritance (n)", "inherited (adj)"], ex: "We should protect our heritage for the future."},
+    {word: "identity (n)", forms: ["identify (v)", "identification (n)"], ex: "Heritage is part of our national identity."},
+    {word: "merchant (n)", forms: ["merchandise (n)", "merchandise (v)"], ex: "He sells imported merchandise."},
+    {word: "monument (n)", forms: ["monumental (adj)"], ex: "This is a monumental building."},
+    {word: "neighbor (n)", forms: ["neighborhood (n)", "neighboring (adj)", "neighborly (adj)"], ex: "My neighbor keeps the neighborhood clean."},
+    {word: "preserve (v)", forms: ["preservation (n)", "preserved (adj)", "preserving (n)", "preservative (n/adj)"], ex: "We should preserve old buildings."},
+    {word: "pride (n)", forms: ["proud (adj)", "proudly (adv)"], ex: "We feel pride in our country's history."},
+    {word: "restore (v)", forms: ["restoration (n)", "restored (adj)", "restorative (adj)"], ex: "The restoration of the temple is important."}
+];
+
+const confusionData = [
+    {word: "able to - capable of", forms: ["able to (+ inf)", "capable of (+ n/gerund)"], ex: "She is able to solve the problem. / He is capable of leading the team."},
+    {word: "agree on / about / agree to - agree with", forms: ["agree on/about + noun", "agree to + inf.", "agree with + someone"], ex: "They agreed on the price. / She agreed to help me. / I agree with you."},
+    {word: "along - across - through", forms: ["along (prep/adv)", "across/through (prep/adv)"], ex: "We walked along the river. / She ran across/through the street."},
+    {word: "be proud to - be proud of - take pride in", forms: ["be proud to + inf.", "be proud of + (n/inf/+ing)", "take pride in + (n/inf/+ing)"], ex: "I am proud to represent my school. / She is proud of her son. / He takes pride in his work."},
+    {word: "go shopping - do the shopping", forms: ["go shopping", "do the shopping"], ex: "We went shopping for clothes. / I will do the shopping this afternoon."},
+    {word: "mission - job - work", forms: ["mission (n)", "job (n)", "work (n/v)"], ex: "The rescue mission was dangerous. / I have several jobs to do. / I have too much work to do."},
+    {word: "remember - remind", forms: ["remember (v)", "remind (v)"], ex: "I always remember my wife's birthday. / Please, remind me to call my mother."}
+];
+
+const readingTextL1 = [
+    {en: "Egypt is a land with a heart that has been beating for thousands of years. We are proud to call it our home. It is a place where the past and the present meet in harmony.", ar: "مصر أرض ذات قلب ينبض منذ آلاف السنين. نحن فخورون بأن نسميها وطننا. إنه مكان يلتقي فيه الماضي والحاضر في تناغم."},
+    {en: "Egypt has always played an important role in the world. Our ancestors built one of the greatest civilizations in history.", ar: "لقد لعبت مصر دائماً دوراً مهماً في العالم. بنى أجدادنا واحدة من أعظم الحضارات في التاريخ."},
+    {en: "They gave the world knowledge in writing, mathematics, and medicine.", ar: "لقد وهبوا العالم المعرفة في الكتابة والرياضيات والطب."},
+    {en: "The hieroglyphs carved into temple walls were not just beautiful art; they were a way to record history.", ar: "لم تكن الهيروغليفية المنقوشة على جدران المعابد مجرد فن جميل؛ بل كانت وسيلة لتسجيل التاريخ."},
+    {en: "The Library of Alexandria once gathered knowledge from all over the world, making Egypt a center of learning.", ar: "قامت مكتبة الإسكندرية بجمع المعرفة من جميع أنحاء العالم ذات يوم، مما جعل مصر مركزاً للتعلم."},
+    {en: "Egypt was also a crossroads for trade. Merchants traveled along the Nile and across the deserts, carrying goods such as gold, spices, papyrus, and grain.", ar: "كانت مصر أيضاً مفترق طرق للتجارة. سافر التجار على طول نهر النيل وعبر الصحاري، حاملين بضائع مثل الذهب والتوابل وورق البردي والحبوب."},
+    {en: "Our land was a bridge where people met and exchanged ideas, making Egypt a source of inspiration for many civilizations.", ar: "كانت أرضنا جسراً حيث التقى الناس وتبادلوا الأفكار، مما جعل مصر مصدر إلهام للعديد من الحضارات."},
+    {en: "Today, Egypt continues to grow. Our cities rise with modern buildings, while our historical monuments still stand with pride.", ar: "اليوم، تواصل مصر النمو. مدننا ترتفع بمباني حديثة، بينما لا تزال معالمنا التاريخية واقفة بفخر."},
+    {en: "We are building new roads, bridges, and neighborhoods that show the world our determination to progress.", ar: "نحن نبني طرقاً وجسوراً وأحياء جديدة تظهر للعالم عزمنا على التقدم."},
+    {en: "From the Pyramids of Giza to the Grand Egyptian Museum, we continue to honor our history while shaping our future.", ar: "من أهرامات الجيزة إلى المتحف المصري الكبير، نواصل تكريم تاريخنا مع تشكيل مستقبلنا."},
+    {en: "We take pride in our country, not only for its beauty, but also because we understand the sacrifices of our ancestors.", ar: "نحن نفخر ببلدنا، ليس فقط لجماله، ولكن لأننا نفهم تضحيات أجدادنا."},
+    {en: "We work hard to make it greater for generations to come. Every citizen has a role to play - protecting our heritage, contributing to our economy, and sharing our culture with the world.", ar: "نحن نعمل بجد لجعلها أعظم للأجيال القادمة. لكل مواطن دور يلعبه - حماية تراثنا، والمساهمة في اقتصادنا، ومشاركة ثقافتنا مع العالم."}
+];
+
+const listeningTextL2 = [
+    {en: "Host: Welcome back to 'Our Story'. Today, we're talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.", ar: "المذيع: مرحباً بكم مجدداً في 'قصتنا'. اليوم، نتحدث مع الدكتورة منى حسن، عالمة الآثار التي قادت مؤخراً فريقاً لترميم أجزاء من معبد فيلة. دكتورة منى، شكراً لانضمامك إلينا."},
+    {en: "Dr. Mona: Thank you. It's a privilege to be here.", ar: "الدكتورة منى: شكراً لك. إنه لشرف لي أن أكون هنا."},
+    {en: "Host: Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?", ar: "المذيع: عملك في فيلة هو رمز قوي. هل يمكنك إخبارنا لماذا تعد حماية تراثنا مهمة جداً؟"},
+    {en: "Dr. Mona: Of course. When we restore a historical site, we're not just fixing old stones. We're reconnecting with our past. Our ancestors left us a rich legacy - from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we come from, and the greatness we are capable of. It's a source of immense pride for every Egyptian.", ar: "الدكتورة منى: بالطبع. عندما نرمم موقعاً تاريخياً، نحن لا نقوم فقط بإصلاح حجارة قديمة. نحن نعيد الاتصال بماضينا. لقد ترك لنا أجدادنا إرثاً غنياً - من الأهرامات إلى معابد صعيد مصر. هذا التراث هو جوهر هويتنا الوطنية. إنه يذكرنا بمن نحن، ومن أين أتينا، والعظمة التي نحن قادرون عليها. إنه مصدر فخر هائل لكل مصري."},
+    {en: "Host: It sounds like more than a job; it's a mission. What do you think is the biggest challenge to preserving our heritage today?", ar: "المذيع: يبدو الأمر أكثر من مجرد وظيفة؛ إنها مهمة. ما هو برأيك التحدي الأكبر للحفاظ على تراثنا اليوم؟"},
+    {en: "Dr. Mona: The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people don't realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction—it's a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection.", ar: "الدكتورة منى: التحديات كثيرة، من التطور الحضري إلى تغير المناخ. لكن ربما الأكبر هو نقص الوعي بين شبابنا. العديد من الشباب لا يدركون قيمة هذه الكنوز. مهمتنا هي إلهامهم، لجعلهم يرون أن المعبد الذي يبلغ عمره ألف عام ليس مجرد منطقة جذب سياحي - إنه جزء حي من قصتنا. نحن بحاجة إلى تشجيعهم على زيارة هذه المواقع، وتعلم القصص، والشعور بالارتباط."},
+    {en: "Host: That's a great point. You're inspiring them to become the next generation of protectors. Thank you for your valuable work, Dr. Mona.", ar: "المذيع: هذه نقطة رائعة. أنت تلهمهم ليصبحوا الجيل القادم من الحماة. شكراً لعملك القيم، دكتورة منى."}
+];
+
+// ===================== بناء الواجهة (نفس المنطق السابق) =====================
+
+function makeWordSpans(text) {
+    const words = text.trim().split(/\s+/);
+    return words.map((w, idx) => `<span class="word" data-word-index="${idx}">${w}</span>`).join(' ');
+}
+
+function buildAllSections() {
+    const container = document.getElementById('sections-container');
+
+    function makePills(wordsArray, sectionId) {
+        return wordsArray.map((w, i) => {
+            const id = `${sectionId}_p${i}`;
+            const wordHtml = makeWordSpans(w[0]);
+            const speakText = cleanForSpeech(w[0]);
+            return `<div class="pill" id="${id}" data-speak="${speakText}" onclick="playOne('${id}')"><span class="en">${wordHtml}</span><span class="tr">${w[1]}</span></div>`;
+        }).join('');
+    }
+
+    function makeRuleItem(icon, sectionId, index, speakText, arText, displayText) {
+        const id = `${sectionId}_${index}`;
+        const wordHtml = makeWordSpans(displayText || speakText);
+        const finalSpeak = cleanForSpeech(speakText);
+        return `<div class="rule-item" id="${id}" data-speak="${finalSpeak}" onclick="playOne('${id}')">
+            <span class="rule-icon">${icon}</span>
+            <div class="rule-text">
+                <span class="en">${wordHtml}</span>
+                <span class="ar">${arText || ''}</span>
+            </div>
+        </div>`;
+    }
+
+    function playBar(sectionId) {
+        return `<div class="sec-play-bar">
+            <button class="big-btn" style="background:linear-gradient(135deg,var(--A),var(--A2))" onclick="playSection('${sectionId}')">▶ Play</button>
+            <button class="big-btn pause-btn" onclick="pauseAll()">⏸ Pause</button>
+            <button class="big-btn stop-btn" onclick="stopAll()">⏹ Stop</button>
+        </div>`;
+    }
+
+    function makeStorySection(title, storyData) {
+        const speakerEmojis = {"Host":"🎙️","Dr. Mona":"👩‍⚕️"};
+
+        return `<div class="story-card">
+            <div style="font-weight:bold;color:var(--A);margin-bottom:12px;">${title}</div>
+            ${storyData.map((s,i) => {
+                const id = `secStory_${title.replace(/\s/g,'')}_${i}`;
+                let enText = s.en;
+                let speaker = '';
+                let dialogueText = enText;
+                const colonIndex = enText.indexOf(': ');
+                if (colonIndex > 0) {
+                    speaker = enText.substring(0, colonIndex);
+                    dialogueText = enText.substring(colonIndex + 2);
+                }
+                const emoji = speakerEmojis[speaker] || '📖';
+                const wordHtml = makeWordSpans(dialogueText);
+                let speakerHtml = '';
+                if (speaker) {
+                    speakerHtml = `<span class="speaker-label">${emoji} ${speaker}</span> `;
+                }
+                return `<div class="sentence" id="${id}" data-speak="${s.en}" onclick="playOne('${id}')">
+                    ${speakerHtml} ${wordHtml}
+                </div> `;
+            }).join('')}
+            <div class="story-ar">${storyData.map(s => s.ar).join(' ')}</div>
+        </div>`;
+    }
+
+    const sections = [];
+
+    // 1. Key Vocabulary
+    if (keyVocab && keyVocab.length > 0) {
+        sections.push({ title:"💊 Key Vocabulary", id:"secKeyVocab", content: `<div class="info-box"><div class="info-title">Key Vocabulary (Lessons 1 & 2)</div><div class="vocab">${makePills(keyVocab, "secKeyVocab")}</div></div>` });
+    }
+
+    // 2. Accumulative Vocabulary
+    if (accVocab && accVocab.length > 0) {
+        sections.push({ title:"📚 Accumulative Vocabulary", id:"secAccVocab", content: `<div class="info-box"><div class="info-title">Accumulative Vocabulary</div><div class="vocab">${makePills(accVocab, "secAccVocab")}</div></div>` });
+    }
+
+    // 3. Definitions
+    if (defsData && defsData.length > 0) {
+        sections.push({ title:"📝 Definitions", id:"secDefs", content: `<div class="rules-grid">${defsData.map((d,i) => {
+            const speakText = cleanForSpeech(d.word) + " | " + d.def;
+            return makeRuleItem('📖', 'secDefs', i, speakText, d.def, d.word);
+        }).join('')}</div>` });
+    }
+
+    // 4. Synonyms & Antonyms
+    if (synData && synData.length > 0) {
+        sections.push({ title:"🔄 Synonyms", id:"secSyn", content: `<div class="rules-grid">${synData.map((s,i) => makeRuleItem('↔️', 'secSyn', i, s.word + " | " + s.syn, s.syn, s.word)).join('')}</div>` });
+    }
+    if (antData && antData.length > 0) {
+        sections.push({ title:"🚫 Antonyms", id:"secAnt", content: `<div class="rules-grid">${antData.map((a,i) => makeRuleItem('🛑', 'secAnt', i, a.word + " | " + a.ant, a.ant, a.word)).join('')}</div>` });
+    }
+
+    // 5. Collocations
+    if (collocationsData && collocationsData.length > 0) {
+        sections.push({ title:"🔗 Collocations", id:"secCollocations", content: `<div class="rules-grid">${collocationsData.map((c,i) => makeRuleItem('🔗', 'secCollocations', i, c[0], c[1], c[0])).join('')}</div>` });
+    }
+
+    // 6. Verb + Prepositions (Phrasal Verbs)
+    if (phrasalVerbsData && phrasalVerbsData.length > 0) {
+        sections.push({ title:"⚡ Verb + Prepositions", id:"secPhrasal", content: `<div class="rules-grid">${phrasalVerbsData.map((p,i) => makeRuleItem('⚡', 'secPhrasal', i, p[0], p[1], p[0])).join('')}</div>` });
+    }
+
+    // 7. Derivatives
+    if (derivativesData && derivativesData.length > 0) {
+        sections.push({ title:"🔨 Derivatives (Word Families)", id:"secDerivatives", content: `<div class="rules-grid">${derivativesData.map((d,i) => {
+            const formsStr = d.forms.join(" | ");
+            const speakText = `${d.word} | ${formsStr}`;
+            const displayText = `${d.word} → ${formsStr}`;
+            return makeRuleItem('🔨', 'secDerivatives', i, speakText, d.ex, displayText);
+        }).join('')}</div>` });
+    }
+
+    // 8. Clear the Confusion
+    if (confusionData && confusionData.length > 0) {
+        sections.push({ title:"🧐 Clear the Confusion", id:"secConfusion", content: `<div class="rules-grid">${confusionData.map((c,i) => {
+            const speakText = `${c.word} | ${c.forms}`;
+            const displayText = `${c.word} : ${c.forms}`;
+            return makeRuleItem('🧐', 'secConfusion', i, speakText, c.ex, displayText);
+        }).join('')}</div>` });
+    }
+
+    // 9. Reading Text
+    if (readingTextL1 && readingTextL1.length > 0) {
+        sections.push({ title:"📖 Reading Text (Lesson 1)", id:"secReadL1", content: makeStorySection("Taking Pride in Our Beloved Egypt", readingTextL1) });
+    }
+
+    // 10. Listening Text
+    if (listeningTextL2 && listeningTextL2.length > 0) {
+        sections.push({ title:"🎧 Listening Text (Lesson 2)", id:"secListenL2", content: makeStorySection("Moments That Shaped Us", listeningTextL2) });
+    }
+
+    let html = '';
+    sections.forEach(sec => {
+        html += `<div class="section-block" id="${sec.id}">
+            <div class="sec-title">${sec.title}</div>
+            <div class="sec-body">
+                ${playBar(sec.id)}
+                ${sec.content}
+            </div>
+        </div>`;
+    });
+    container.innerHTML = html;
+}
+
+// ===================== نظام الصوت (نفس الكود تماماً) =====================
+const rateRange = document.getElementById('rateRange');
+const rateBadge = document.getElementById('rateBadge');
+const fabPause = document.getElementById('fabPause');
+
+const savedRate = localStorage.getItem('speechRate') || 1;
+rateRange.value = savedRate;
+rateBadge.textContent = parseFloat(savedRate).toFixed(1)+'x';
+rateRange.addEventListener('input', () => {
+    const val = parseFloat(rateRange.value).toFixed(1);
+    rateBadge.textContent = val+'x';
+    localStorage.setItem('speechRate', val);
+});
+
+let voices = [];
+let voiceLoadAttempt = 0;
+const MAX_VOICE_LOAD_ATTEMPTS = 6;
+const VOICE_RETRY_DELAYS = [0, 150, 400, 800, 1500, 2500];
+const normalizeVoiceLang = (lang) => String(lang || '').replace('_', '-');
+const isVoiceLangMatch = (voiceLang, targetLang) => {
+    const normalized = normalizeVoiceLang(voiceLang).toLowerCase();
+    const target = targetLang.toLowerCase();
+    return normalized === target || normalized.startsWith(target + '-');
+};
+const voiceQualityScore = (voice) => {
+    const name = String(voice.name || '').toLowerCase();
+    let score = 0;
+    if (name.includes('google')) score += 30;
+    if (name.includes('microsoft')) score += 25;
+    if (name.includes('samantha')) score += 20;
+    if (voice.localService) score += 2;
+    return score;
+};
+const sortVoicesByQuality = (voiceList) => [...voiceList].sort((a, b) => {
+    const scoreDifference = voiceQualityScore(b) - voiceQualityScore(a);
+    return scoreDifference || String(a.name || '').localeCompare(String(b.name || ''));
+});
+function loadVoices() {
+    const availableVoices = window.speechSynthesis.getVoices();
+    if (availableVoices.length) {
+        voices = availableVoices;
+        voiceLoadAttempt = 0;
+        populateVoiceSelect();
+        return;
+    }
+    if (voiceLoadAttempt < MAX_VOICE_LOAD_ATTEMPTS) {
+        const delay = VOICE_RETRY_DELAYS[voiceLoadAttempt] || VOICE_RETRY_DELAYS[VOICE_RETRY_DELAYS.length - 1];
+        voiceLoadAttempt++;
+        window.setTimeout(loadVoices, delay);
+    }
+}
+function populateVoiceSelect() {
+    const vs = document.getElementById('voiceSelect');
+    const note = document.getElementById('voiceNote');
+    if (!vs || !voices.length) return;
+    const englishVoices = voices.filter(v =>
+        isVoiceLangMatch(v.lang, 'en-US') || isVoiceLangMatch(v.lang, 'en-GB')
+    );
+    const displayedVoices = englishVoices.length ? sortVoicesByQuality(englishVoices) :
+        sortVoicesByQuality(voices.filter(v => normalizeVoiceLang(v.lang).toLowerCase().startsWith('en')));
+    if (!displayedVoices.length) {
+        note.textContent = '⚠️ No English voice found.';
+        return;
+    }
+    note.textContent = englishVoices.length ? '' : '⚠️ No US/UK voice found; showing English voices.';
+    const savedURI = localStorage.getItem('voiceURI');
+    const savedLang = localStorage.getItem('voiceLang');
+    vs.innerHTML = displayedVoices.map((voice) => {
+        const lang = normalizeVoiceLang(voice.lang);
+        const label = `${isVoiceLangMatch(lang, 'en-US') ? '🇺🇸 American' : isVoiceLangMatch(lang, 'en-GB') ? '🇬🇧 British' : 'English'} — ${voice.name} (${lang})`;
+        const option = document.createElement('option');
+        option.value = voice.voiceURI;
+        option.textContent = label;
+        option.dataset.lang = lang;
+        return option.outerHTML;
+    }).join('');
+    const savedOption = [...vs.options].find(option => option.value === savedURI) ||
+        [...vs.options].find(option => option.dataset.lang === savedLang);
+    vs.value = savedOption ? savedOption.value : vs.options[0].value;
+    const selected = voices.find(v => v.voiceURI === vs.value) || displayedVoices[0];
+    localStorage.setItem('voiceURI', selected.voiceURI);
+    localStorage.setItem('voiceLang', normalizeVoiceLang(selected.lang));
+}
+document.getElementById('voiceSelect').addEventListener('change', function() {
+    const selected = voices.find(v => v.voiceURI === this.value);
+    if (selected) {
+        localStorage.setItem('voiceURI', selected.voiceURI);
+        localStorage.setItem('voiceLang', normalizeVoiceLang(selected.lang));
+    }
+});
+function getSelectedVoice() {
+    const select = document.getElementById('voiceSelect');
+    const savedURI = localStorage.getItem('voiceURI');
+    const savedLang = localStorage.getItem('voiceLang');
+    const selectedURI = savedURI || (select && select.value);
+    return voices.find(v => v.voiceURI === selectedURI) ||
+        voices.find(v => savedLang && normalizeVoiceLang(v.lang) === savedLang) ||
+        voices.find(v => select && v.voiceURI === select.value) || null;
+}
+
+window._q = []; window._qi = 0;
+window._currentUtterance = null;
+let currentHighlightedId = null;
+
+function clearAllHighlights() {
+    document.querySelectorAll('.active-sent').forEach(e => e.classList.remove('active-sent'));
+    currentHighlightedId = null;
+}
+function showFab(show) { if (show) fabPause.classList.add('show'); else fabPause.classList.remove('show'); }
+function updateFabIcon() {
+    if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) fabPause.innerHTML = '⏸️';
+    else if (window.speechSynthesis.paused) fabPause.innerHTML = '▶️';
+    else fabPause.innerHTML = '⏯️';
+}
+
+function playQueue() {
+    if (window._qi >= window._q.length) {
+        clearAllHighlights(); showFab(false); return;
+    }
+    const item = window._q[window._qi];
+    if (currentHighlightedId !== item.id) {
+        clearAllHighlights();
+        const el = document.getElementById(item.id);
+        if (el) {
+            el.classList.add('active-sent');
+            el.scrollIntoView({behavior:'smooth',block:'nearest'});
+            currentHighlightedId = item.id;
+        }
+    }
+    const u = new SpeechSynthesisUtterance(item.text);
+    u.rate = parseFloat(rateRange.value) || 1;
+    const voice = getSelectedVoice();
+    u.lang = voice ? normalizeVoiceLang(voice.lang) : (localStorage.getItem('voiceLang') || 'en-US');
+    if (voice) u.voice = voice;
+
+    u.onstart = () => { showFab(true); updateFabIcon(); };
+    u.onend = function() { window._qi++; playQueue(); };
+    u.onerror = function(e) { console.warn('Speech error', e); window._qi++; playQueue(); };
+    u.onpause = () => updateFabIcon();
+    u.onresume = () => updateFabIcon();
+
+    window._currentUtterance = u;
+    window.speechSynthesis.speak(u);
+}
+
+function splitAndQueue(textParts, id) {
+    textParts.forEach((p) => { const trimmed = p.trim(); if (trimmed) window._q.push({id: id, text: trimmed}); });
+}
+
+function playSection(secId) {
+    stopAll();
+    const sec = document.getElementById(secId);
+    const els = [...sec.querySelectorAll('[data-speak]')];
+    els.forEach(el => {
+        const text = el.dataset.speak;
+        const parts = text.split('|').map(p => p.trim());
+        splitAndQueue(parts, el.id);
+    });
+    window._qi = 0;
+    playQueue();
+}
+
+function playAll() {
+    stopAll();
+    const els = [...document.querySelectorAll('[data-speak]')];
+    els.forEach(el => {
+        const text = el.dataset.speak;
+        const parts = text.split('|').map(p => p.trim());
+        splitAndQueue(parts, el.id);
+    });
+    window._qi = 0;
+    playQueue();
+}
+
+function playOne(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const text = el.dataset.speak;
+    stopAll();
+    const parts = text.split('|').map(p => p.trim());
+    splitAndQueue(parts, id);
+    window._qi = 0;
+    playQueue();
+}
+
+function pauseAll() {
+    if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        window.speechSynthesis.pause(); updateFabIcon();
+    } else if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume(); updateFabIcon();
+    }
+}
+
+function stopAll() {
+    window._q = []; window._qi = 0;
+    clearAllHighlights();
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    showFab(false);
+}
+
+function toggleFabPause() { pauseAll(); }
+
+// ===================== الثيمات (نفس الكود) =====================
+function setTheme(theme, btn) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    localStorage.setItem('theme', theme);
+}
+const savedTheme = localStorage.getItem('theme') || 'teal';
+document.documentElement.setAttribute('data-theme', savedTheme);
+document.querySelectorAll('.theme-btn').forEach(b => {
+    if (b.classList.contains('t-'+savedTheme)) b.classList.add('active');
+});
+
+// ===================== بدء التشغيل =====================
+buildAllSections();
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+</script>
+</body>
+</html>
