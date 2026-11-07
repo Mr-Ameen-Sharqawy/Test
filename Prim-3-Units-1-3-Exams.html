@@ -1,0 +1,4338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Units 1-3 Revision | Grade 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#ff9f43;--secondary:#00b894;--accent:#54a0ff;--dark:#222f3e;--bg:#f7f1e3;--danger:#ff6b6b}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Nunito','Cairo',sans-serif}body{background:var(--bg);background-image:radial-gradient(#00d2d3 1px,transparent 1px);background-size:20px 20px;color:var(--dark);min-height:100vh;display:flex;flex-direction:column;align-items:center}header{background:#fff;width:100%;padding:20px;text-align:center;box-shadow:0 4px 15px #0001;border-bottom:5px solid var(--primary)}h1{color:#00a8a8;font-family:Fredoka,sans-serif;font-size:2.2rem;text-shadow:2px 2px 0 #222f3e;margin-bottom:5px}h2{color:var(--primary);font-size:1.1rem}.container{width:95%;max-width:850px;margin:20px auto;background:white;border-radius:20px;box-shadow:0 10px 25px #0001;padding:20px;border:3px solid #00d2d3;flex:1}.screen{display:none;animation:fadeIn .4s ease-in-out}.screen.active{display:block}.input-group{margin:20px 0;text-align:center}label{display:block;font-size:1.2rem;margin-bottom:10px;font-weight:bold}input[type=text],input[type=number]{width:80%;padding:14px;font-size:1.1rem;border:3px solid #00d2d3;border-radius:50px;outline:none;text-align:center;background:#f9f9f9}input:focus{border-color:var(--primary);box-shadow:0 0 15px #ff9f434d}.btn{background:var(--primary);color:white;border:0;padding:14px 34px;font-size:1.1rem;border-radius:50px;cursor:pointer;font-weight:bold;box-shadow:0 5px 0 #e58e26;transition:.2s;margin-top:18px;width:100%;max-width:300px}.btn:active{transform:translateY(5px);box-shadow:none}.btn-blue{background:var(--accent);box-shadow:0 5px 0 #2e86de}.btn-whatsapp{background:#25d366;box-shadow:0 5px 0 #128c7e}.nav-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px;padding-top:15px;border-top:2px dashed #eee}.tab-btn{background:#f1f2f6;border:2px solid #dfe4ea;padding:12px 20px;border-radius:15px;cursor:pointer;font-weight:bold;font-size:1.05rem;color:#747d8c;min-width:120px}.tab-btn:hover{background:#fff;border-color:var(--primary);color:var(--primary);transform:translateY(-2px)}.question-card{background:#fff;border:2px solid #f1f2f6;border-left:5px solid var(--accent);padding:18px;margin-bottom:16px;border-radius:15px}.question-text{font-size:1.12rem;font-weight:700;margin-bottom:13px;line-height:1.5}.reading-passage{background:#eef7ff;border:2px solid #b9ddff;border-radius:12px;padding:12px 14px;margin-bottom:12px;color:#24527a;font-size:1rem;line-height:1.65;font-weight:600}.reading-question{background:#fff8e8;border-left:4px solid #ff9f43;border-radius:8px;padding:10px 12px;margin-bottom:13px;color:#9a5b00;font-size:1.08rem;font-weight:700;line-height:1.5}.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.option-label{display:flex;align-items:center;background:#f8f9fa;padding:11px;border-radius:10px;border:2px solid #eee;cursor:pointer;font-size:1rem}.option-label:hover{border-color:var(--accent);background:#eef5ff}input[type=radio]{margin-right:10px;width:19px;height:19px;accent-color:var(--primary)}.progress{background:#eee;border-radius:20px;height:12px;margin:10px 0 20px;overflow:hidden}.progress-bar{height:100%;background:var(--secondary);width:0;transition:.3s}.score-circle{width:160px;height:160px;border-radius:50%;background:var(--secondary);color:#fff;display:flex;justify-content:center;align-items:center;font-size:3rem;font-weight:bold;margin:20px auto;border:6px solid #fff;box-shadow:0 0 0 6px var(--secondary)}.message{text-align:center;font-size:1.35rem;color:var(--primary);margin-bottom:25px;font-weight:bold}.report-section{background:#f1f2f6;padding:20px;border-radius:15px;margin-top:20px;text-align:center}.summary{text-align:center;font-weight:bold;color:#555;margin-bottom:8px}.mistakes-section{margin:15px 0;padding:15px;background:#fff5f5;border:2px solid #ffd0d0;border-radius:15px}.mistakes-title{color:#d63031;text-align:center;font-weight:bold;margin-bottom:10px;font-family:Cairo}.mistake-item{padding:9px 0;border-bottom:1px solid #ffdede;line-height:1.5}.mistake-item:last-child{border-bottom:0}.mistake-q{font-weight:bold}.wrong-answer{color:#d63031}.correct-answer{color:#168f62}footer{padding:20px;font-size:1rem;color:#666;text-align:center;font-weight:bold;background:#fff;width:100%;margin-top:20px;border-top:1px solid #eee}.heart{color:red}@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.options-grid{grid-template-columns:1fr}h1{font-size:1.8rem}.score-circle{width:130px;height:130px;font-size:2.5rem}.container{width:100%;border:none;border-radius:0}.tab-btn{width:45%}}
+
+/* ---- additions ---- */
+input[type=tel]{width:80%;padding:14px;font-size:1.1rem;border:3px solid #00d2d3;border-radius:50px;outline:none;text-align:center;background:#f9f9f9}
+.option-label:focus-within{border-color:var(--accent);background:#eef5ff}
+.option-label.selected{border-color:var(--primary);background:#fff4e6}
+.skills-title{text-align:center;font-family:Cairo,sans-serif;font-weight:bold;color:#555;margin:16px 0 8px}
+.skills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:18px}
+.skill-chip{border:2px solid #dfe4ea;background:#f1f2f6;border-radius:14px;padding:8px 16px;min-width:120px;text-align:center;font-weight:bold}
+.skill-chip small{display:block;font-size:1.05rem;margin-top:2px}
+.skill-chip.good{border-color:#2ed573;background:#eafaf1;color:#168f62}
+.skill-chip.mid{border-color:#ffa502;background:#fff6e5;color:#b36b00}
+.skill-chip.low{border-color:#ff6b6b;background:#fff0f0;color:#d63031}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:15px}
+.actions .btn{margin-top:0}
+.mistake-item bdi{font-weight:bold}
+@media(prefers-reduced-motion:reduce){.screen{animation:none}.btn,.tab-btn,.progress-bar{transition:none}}
+
+/* ---- additions ---- */
+.options-grid label:last-child:nth-child(odd){grid-column:1/-1}
+/* ---- contact bar ---- */
+.contact-bar{width:100%;background:var(--dark);color:#fff;border-bottom:4px solid var(--primary);padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;align-items:center;font-family:'Cairo','Nunito',sans-serif}
+.contact-bar .cb-name{font-family:Fredoka,'Cairo',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:.3px}
+.contact-bar .cb-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.contact-bar a{color:#fff;text-decoration:none;font-weight:bold;font-size:.95rem;padding:6px 16px;border-radius:50px;background:rgba(255,255,255,.14);transition:.2s}
+.contact-bar a:hover{transform:translateY(-2px)}
+.contact-bar a.wa{background:#25d366}
+.contact-bar a.call{background:var(--accent)}
+</style>
+</head>
+<body>
+<div class="contact-bar">
+  <span class="cb-name">Yousef</span>
+</div>
+
+<header><h1>Units 1-3 Revision - Grade 3</h1><h2>Vocabulary • Grammar • Reading • Phonics</h2></header>
+<div class="container">
+
+<section id="welcome-screen" class="screen active">
+  <div class="input-group">
+    <div style="font-size:3rem;margin-bottom:10px">👋</div>
+    <h3 lang="ar" dir="rtl" style="margin-bottom:20px;font-family:Cairo">أهلاً بك يا بطل!</h3>
+    <label for="studentName">Enter Student Name:</label>
+    <input type="text" id="studentName" placeholder="e.g., Ahmed Ali" autocomplete="off">
+  </div>
+  <p lang="ar" dir="rtl" style="text-align:center;color:var(--dark);font-weight:bold;font-family:Cairo;font-size:1.15rem">اختر الموديول لتبدأ الاختبار</p>
+  <div class="nav-tabs" id="model-tabs"></div>
+</section>
+
+<section id="quiz-screen" class="screen">
+  <div style="text-align:center;margin-bottom:15px">
+    <h3 id="model-title" style="color:var(--primary)"></h3>
+    <div id="question-counter" class="summary"></div>
+  </div>
+  <div class="progress"><div id="progress-bar" class="progress-bar"></div></div>
+  <div id="quiz-content"></div>
+  <div style="text-align:center;padding-bottom:20px"><button class="btn" onclick="submitQuiz()">Submit Answers ✅</button></div>
+</section>
+
+<section id="result-screen" class="screen">
+  <div class="score-circle" id="score-display">0/30</div>
+  <div class="message" id="encouragement-msg"></div>
+  <div class="summary" id="result-summary"></div>
+  <div class="skills-title" lang="ar" dir="rtl">مستواك في كل مهارة</div>
+  <div class="skills" id="skills-box"></div>
+  <div id="mistakes-section" class="mistakes-section"></div>
+  <div class="report-section">
+    <h3 lang="ar" dir="rtl" style="margin-bottom:15px;font-family:Cairo">أرسل التقرير للمستر</h3>
+    <div id="teacher-phone-group">
+      <label for="teacherPhone" style="font-size:1rem">Teacher's WhatsApp Number:</label>
+      <input type="tel" id="teacherPhone" placeholder="01xxxxxxxxx" inputmode="numeric" autocomplete="off">
+    </div>
+    <button class="btn btn-whatsapp" onclick="sendWhatsApp()">Send via WhatsApp 💬</button>
+  </div>
+  <div class="actions">
+    <button class="btn" onclick="retryModule()">Retry This Module 🔁</button>
+    <button class="btn btn-blue" onclick="backToModules()">Try Another Module 🔄</button>
+  </div>
+</section>
+
+</div>
+
+<script>
+// ============================================================
+//  Settings (تقدر تعدلهم بسهولة)
+// ============================================================
+// Put the teacher's number here (e.g. '01012345678') to hide the phone box from students.
+// Leave it empty '' and the student types it once (it is remembered on that device).
+const TEACHER_PHONE = '';
+const SHUFFLE_QUESTIONS = true;   // random question order every attempt
+const SHUFFLE_OPTIONS   = true;   // random answer order every attempt
+const MAX_MISTAKES_IN_REPORT = 10;
+
+// ============================================================
+//  Questions  (tag = Vocabulary | Grammar | Reading)
+// ============================================================
+const allModels = {
+  "1": [
+    {
+      "q": "Which is a correct greeting?",
+      "options": [
+        "Good eight.",
+        "Good morning.",
+        "Good age.",
+        "Good name."
+      ],
+      "a": "Good morning.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We go to the ___ to read books.",
+      "options": [
+        "library",
+        "museum",
+        "station",
+        "park"
+      ],
+      "a": "library",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ a story about birds.",
+      "options": [
+        "play",
+        "talk",
+        "grow",
+        "read"
+      ],
+      "a": "read",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which word means “at what time”?",
+      "options": [
+        "what",
+        "when",
+        "where",
+        "why"
+      ],
+      "a": "when",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which word is a place?",
+      "options": [
+        "eight",
+        "curly",
+        "classroom",
+        "helpful"
+      ],
+      "a": "classroom",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We buy food at the ___.",
+      "options": [
+        "library",
+        "school",
+        "museum",
+        "supermarket"
+      ],
+      "a": "supermarket",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I play with my friends at the ___.",
+      "options": [
+        "supermarket",
+        "library",
+        "park",
+        "station"
+      ],
+      "a": "park",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which word is an action?",
+      "options": [
+        "brown",
+        "friendly",
+        "name",
+        "study"
+      ],
+      "a": "study",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ a big family.",
+      "options": [
+        "have",
+        "has",
+        "am",
+        "is"
+      ],
+      "a": "have",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct answer: My mother’s father is my ___.",
+      "options": [
+        "brother",
+        "grandfather",
+        "uncle",
+        "cousin"
+      ],
+      "a": "grandfather",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "There are lots of trains at the ___.",
+      "options": [
+        "hospital",
+        "train station",
+        "museum",
+        "park"
+      ],
+      "a": "train station",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "A place where animals and plants grow is a ___.",
+      "options": [
+        "farm",
+        "hospital",
+        "school",
+        "kitchen"
+      ],
+      "a": "farm",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Who ___ you to school in the morning? - My mother.",
+      "options": [
+        "reads",
+        "takes",
+        "brushes",
+        "studies"
+      ],
+      "a": "takes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We give our mothers ___ on Mother’s Day.",
+      "options": [
+        "presents",
+        "riddles",
+        "soldiers",
+        "farms"
+      ],
+      "a": "presents",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He ___ his teeth every day.",
+      "options": [
+        "brushing",
+        "brushed",
+        "brushes",
+        "brush"
+      ],
+      "a": "brushes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We go to the ___ when we are sick.",
+      "options": [
+        "hospital",
+        "library",
+        "museum",
+        "park"
+      ],
+      "a": "hospital",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Cairo ___ is a very tall building.",
+      "options": [
+        "Street",
+        "Picture",
+        "Station",
+        "Tower"
+      ],
+      "a": "Tower",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word that means “a special day or event.”",
+      "options": [
+        "member",
+        "farm",
+        "job",
+        "celebration"
+      ],
+      "a": "celebration",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "You ___ very kind.",
+      "options": [
+        "has",
+        "are",
+        "is",
+        "am"
+      ],
+      "a": "are",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My mother ___ delicious food.",
+      "options": [
+        "cooks",
+        "cook",
+        "cooking",
+        "cooked"
+      ],
+      "a": "cooks",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We visited ___ of Giza.",
+      "options": [
+        "the garden",
+        "the station",
+        "the Pyramids",
+        "Alexandria Library"
+      ],
+      "a": "the Pyramids",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Sara ___ her room every morning.",
+      "options": [
+        "is clean",
+        "cleans",
+        "clean",
+        "cleaning"
+      ],
+      "a": "cleans",
+      "tag": "Grammar"
+    },
+    {
+      "q": "They ___ with their friends yesterday.",
+      "options": [
+        "played",
+        "play",
+        "playing",
+        "plays"
+      ],
+      "a": "played",
+      "tag": "Grammar"
+    },
+    {
+      "q": "A whale ___ big.",
+      "options": [
+        "am",
+        "have",
+        "is",
+        "are"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "She ___ very helpful.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "have"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I ___ my grandma last Friday.",
+      "options": [
+        "visit",
+        "visits",
+        "visiting",
+        "visited"
+      ],
+      "a": "visited",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My brother ___ football after school.",
+      "options": [
+        "playing",
+        "is play",
+        "plays",
+        "play"
+      ],
+      "a": "plays",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Mohamed ___ English last night.",
+      "options": [
+        "studies",
+        "studying",
+        "studied",
+        "study"
+      ],
+      "a": "studied",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ our grandparents every Friday.",
+      "options": [
+        "visits",
+        "visiting",
+        "visited",
+        "visit"
+      ],
+      "a": "visit",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "options": [
+        "They am my friends.",
+        "They has my friends.",
+        "They are my friends.",
+        "They is my friends."
+      ],
+      "a": "They are my friends.",
+      "tag": "Grammar"
+    }
+  ],
+  "2": [
+    {
+      "q": "I ___ stories to my little sister.",
+      "options": [
+        "readed",
+        "read",
+        "reads",
+        "reading"
+      ],
+      "a": "read",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Mom ___ a nice meal two hours ago.",
+      "options": [
+        "cook",
+        "cooked",
+        "cooking",
+        "cooks"
+      ],
+      "a": "cooked",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My father ___ me with my homework.",
+      "options": [
+        "helping",
+        "helped",
+        "helps",
+        "help"
+      ],
+      "a": "helps",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My sister ___ pictures every day.",
+      "options": [
+        "drawing",
+        "drew",
+        "draws",
+        "draw"
+      ],
+      "a": "draws",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I ___ my homework before dinner yesterday.",
+      "options": [
+        "finished",
+        "finish",
+        "finishes",
+        "finishing"
+      ],
+      "a": "finished",
+      "tag": "Grammar"
+    },
+    {
+      "q": "This is my uncle. ___ name is Omar.",
+      "options": [
+        "He",
+        "His",
+        "Her",
+        "My"
+      ],
+      "a": "His",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ our hands before eating yesterday.",
+      "options": [
+        "cleans",
+        "cleaning",
+        "clean",
+        "cleaned"
+      ],
+      "a": "cleaned",
+      "tag": "Grammar"
+    },
+    {
+      "q": "She ___ not play football.",
+      "options": [
+        "is",
+        "are",
+        "does",
+        "do"
+      ],
+      "a": "does",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "My grandfather has a farm.",
+        "Has my farm a grandfather.",
+        "A farm grandfather has my.",
+        "Grandfather my a farm has."
+      ],
+      "a": "My grandfather has a farm.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My cousin ___ in Aswan two years ago.",
+      "options": [
+        "live",
+        "living",
+        "lived",
+        "lives"
+      ],
+      "a": "lived",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My brother ___ football after school.",
+      "options": [
+        "plays",
+        "play",
+        "playing",
+        "played"
+      ],
+      "a": "plays",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "___ he help his mother?",
+      "options": [
+        "Does",
+        "Do",
+        "Is",
+        "Are"
+      ],
+      "a": "Does",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Noor ___ to school two days ago.",
+      "options": [
+        "walks",
+        "walked",
+        "walk",
+        "walking"
+      ],
+      "a": "walked",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which word has “wh”?",
+      "options": [
+        "this",
+        "what",
+        "watch",
+        "shout"
+      ],
+      "a": "what",
+      "tag": "Phonics"
+    },
+    {
+      "q": "They ___ the tree yesterday.",
+      "options": [
+        "climbed",
+        "climbs",
+        "climbing",
+        "climb"
+      ],
+      "a": "climbed",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The children ___ in the garden.",
+      "options": [
+        "plays",
+        "playing",
+        "played",
+        "play"
+      ],
+      "a": "play",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word that begins with the letters wh.",
+      "options": [
+        "what",
+        "chat",
+        "that",
+        "shop"
+      ],
+      "a": "what",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Choose the word with the missing letters: e__am.",
+      "options": [
+        "th",
+        "x",
+        "sh",
+        "ch"
+      ],
+      "a": "x",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “Sara’s brother is ten years old. He is tall with short black hair. He wakes up at seven and eats breakfast at 7:30.” How old is her brother?",
+      "options": [
+        "ten",
+        "eight",
+        "nine",
+        "eleven"
+      ],
+      "a": "ten",
+      "tag": "Reading"
+    },
+    {
+      "q": "Zaki ___ football yesterday.",
+      "options": [
+        "play",
+        "playing",
+        "plays",
+        "played"
+      ],
+      "a": "played",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "My favorite celebration is Eid Al-Fitr.",
+        "Celebration my favorite is Eid Al-Fitr.",
+        "Is my favorite celebration Eid Al-Fitr.",
+        "Eid Al-Fitr is favorite my celebration."
+      ],
+      "a": "My favorite celebration is Eid Al-Fitr.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Sara’s brother is ten years old. He is tall with short black hair. He wakes up at seven and eats breakfast at 7:30.” What color is his hair?",
+      "options": [
+        "green",
+        "blue",
+        "black",
+        "brown"
+      ],
+      "a": "black",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Sara’s brother is ten years old. He is tall with short black hair. He wakes up at seven and eats breakfast at 7:30.” What does he do at 7:30?",
+      "options": [
+        "go home",
+        "eat breakfast",
+        "go to bed",
+        "play football"
+      ],
+      "a": "eat breakfast",
+      "tag": "Reading"
+    },
+    {
+      "q": "The lamp is ___ the table.",
+      "options": [
+        "on",
+        "in",
+        "next"
+      ],
+      "a": "on",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The pen is ___ the desk.",
+      "options": [
+        "between",
+        "under",
+        "on"
+      ],
+      "a": "on",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Ali has a pet dog. His dog is small and friendly. Ali gives it food and plays with it every day.” What pet does Ali have?",
+      "options": [
+        "a dog",
+        "a cat",
+        "a rabbit",
+        "a bird"
+      ],
+      "a": "a dog",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Ali has a pet dog. His dog is small and friendly. Ali gives it food and plays with it every day.” What is the dog like?",
+      "options": [
+        "big and angry",
+        "old and weak",
+        "sad and lazy",
+        "small and friendly"
+      ],
+      "a": "small and friendly",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Helps my brother me.",
+        "Me helps my brother.",
+        "Brother my me helps.",
+        "My brother helps me."
+      ],
+      "a": "My brother helps me.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Ali has a pet dog. His dog is small and friendly. Ali gives it food and plays with it every day.” What does Ali do every day?",
+      "options": [
+        "reads it a story",
+        "cooks its dinner",
+        "gives it food and plays with it",
+        "takes it to school"
+      ],
+      "a": "gives it food and plays with it",
+      "tag": "Reading"
+    },
+    {
+      "q": "The ball is ___ the box.",
+      "options": [
+        "between",
+        "in",
+        "next"
+      ],
+      "a": "in",
+      "tag": "Grammar"
+    }
+  ],
+  "3": [
+    {
+      "q": "I ___ books in my free time.",
+      "options": [
+        "eat",
+        "wake",
+        "read",
+        "brush"
+      ],
+      "a": "read",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He sits in ___ of the TV.",
+      "options": [
+        "front",
+        "next",
+        "under"
+      ],
+      "a": "front",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the best daily routine: ___",
+      "options": [
+        "After school, I do my homework and play.",
+        "After school, I brown eyes and tall.",
+        "After school, I am Egypt.",
+        "After school, I has a name."
+      ],
+      "a": "After school, I do my homework and play.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Laila has curly ___.",
+      "options": [
+        "eyes",
+        "hair",
+        "nose",
+        "face"
+      ],
+      "a": "hair",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The dog is ___ the box.",
+      "options": [
+        "next",
+        "to",
+        "under"
+      ],
+      "a": "under",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Youssef left his house early in the morning. First, he went to the library to read a book. Then, he and his mom went shopping at the supermarket. In the afternoon, he played at the park.” Where did Youssef go first?",
+      "options": [
+        "the library",
+        "the park",
+        "the supermarket",
+        "the station"
+      ],
+      "a": "the library",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Sister my is baby cute.",
+        "My baby sister is cute.",
+        "Baby my sister cute is.",
+        "Is cute my baby sister."
+      ],
+      "a": "My baby sister is cute.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the best daily routine: ___",
+      "options": [
+        "I teacher listen yesterday.",
+        "I wake up, eat breakfast, and go to school.",
+        "I school go and breakfast wake.",
+        "I curly hair and friendly."
+      ],
+      "a": "I wake up, eat breakfast, and go to school.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which sentence is about a job?",
+      "options": [
+        "My aunt is kind.",
+        "My aunt is a teacher.",
+        "My aunt has a pet.",
+        "My aunt likes fish."
+      ],
+      "a": "My aunt is a teacher.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “They have many animals on their farm. I love to play with their dog in the garden. My sister Rehab likes to watch the ducks swimming.” What does Fares play with?",
+      "options": [
+        "the dog",
+        "the ducks",
+        "the horses",
+        "the cats"
+      ],
+      "a": "the dog",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Youssef left his house early in the morning. First, he went to the library to read a book. Then, he and his mom went shopping at the supermarket. In the afternoon, he played at the park.” Where did Youssef go with his mom?",
+      "options": [
+        "the library",
+        "the zoo",
+        "the museum",
+        "the supermarket"
+      ],
+      "a": "the supermarket",
+      "tag": "Reading"
+    },
+    {
+      "q": "My grandfather lives on a ___.",
+      "options": [
+        "hospital",
+        "garden",
+        "farm",
+        "school"
+      ],
+      "a": "farm",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Youssef left his house early in the morning. First, he went to the library to read a book. Then, he and his mom went shopping at the supermarket. In the afternoon, he played at the park.” When did he play at the park?",
+      "options": [
+        "at night",
+        "at noon",
+        "in the afternoon",
+        "in the morning"
+      ],
+      "a": "in the afternoon",
+      "tag": "Reading"
+    },
+    {
+      "q": "My favorite celebration is ___.",
+      "options": [
+        "doctor",
+        "Eid Al-Fitr",
+        "Monday",
+        "school"
+      ],
+      "a": "Eid Al-Fitr",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Eid Al-Fitr is a ___.",
+      "options": [
+        "garden",
+        "soldier",
+        "member",
+        "celebration"
+      ],
+      "a": "celebration",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Last Monday, Grade three students went on a trip to the zoo. They went by bus. At the zoo, they saw lions, monkeys, and elephants. The ticket was 20 pounds.” How did they go?",
+      "options": [
+        "on foot",
+        "by bus",
+        "by train",
+        "by car"
+      ],
+      "a": "by bus",
+      "tag": "Reading"
+    },
+    {
+      "q": "Mother’s Day is an important ___.",
+      "options": [
+        "member",
+        "day",
+        "job",
+        "animal"
+      ],
+      "a": "day",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My family has many ___.",
+      "options": [
+        "celebrations",
+        "gardens",
+        "jobs",
+        "members"
+      ],
+      "a": "members",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ from Egypt.",
+      "options": [
+        "are",
+        "has",
+        "am",
+        "is"
+      ],
+      "a": "am",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Last Monday, Grade three students went on a trip to the zoo. They went by bus. At the zoo, they saw lions, monkeys, and elephants. The ticket was 20 pounds.” What animals did they see?",
+      "options": [
+        "lions, monkeys, and elephants",
+        "cats and dogs",
+        "camels and horses",
+        "ducks and cows"
+      ],
+      "a": "lions, monkeys, and elephants",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Is he brother my.",
+        "My brother he is.",
+        "Brother is he my.",
+        "He is my brother."
+      ],
+      "a": "He is my brother.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "They went to the zoo by bus.",
+        "Went they zoo to the bus by.",
+        "The zoo they by went bus.",
+        "By bus went they zoo to."
+      ],
+      "a": "They went to the zoo by bus.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My father ___ breakfast at 7.",
+      "options": [
+        "eats",
+        "eat",
+        "eating",
+        "is eat"
+      ],
+      "a": "eats",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which verb completes: “They ___ football after school.”",
+      "options": [
+        "playing",
+        "is play",
+        "play",
+        "plays"
+      ],
+      "a": "play",
+      "tag": "Grammar"
+    },
+    {
+      "q": "A person who works in a hospital can be a ___.",
+      "options": [
+        "pilot",
+        "doctor",
+        "farmer",
+        "baker"
+      ],
+      "a": "doctor",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Visited we year the Pyramids last.",
+        "Last Pyramids visited we year.",
+        "The Pyramids we year visited.",
+        "We visited the Pyramids last year."
+      ],
+      "a": "We visited the Pyramids last year.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ my brother.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "have"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the word with the /k/ sound.",
+      "options": [
+        "duck",
+        "rain",
+        "pen",
+        "man"
+      ],
+      "a": "duck",
+      "tag": "Phonics"
+    },
+    {
+      "q": "He ___ to school at 8 o’clock every day.",
+      "options": [
+        "go",
+        "going",
+        "is go",
+        "goes"
+      ],
+      "a": "goes",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I take a ___ when I travel by bus.",
+      "options": [
+        "lunch",
+        "book",
+        "chair",
+        "ticket"
+      ],
+      "a": "ticket",
+      "tag": "Vocabulary"
+    }
+  ],
+  "4": [
+    {
+      "q": "My father ___ his car every Friday.",
+      "options": [
+        "cleans",
+        "clean",
+        "cleaning",
+        "cleaned"
+      ],
+      "a": "cleans",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I ___ nine years old.",
+      "options": [
+        "have",
+        "am",
+        "is",
+        "are"
+      ],
+      "a": "am",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We went on a ___ to the zoo.",
+      "options": [
+        "juice",
+        "room",
+        "trip",
+        "lunch"
+      ],
+      "a": "trip",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "They ___ to school in the morning.",
+      "options": [
+        "gone",
+        "go",
+        "goes",
+        "going"
+      ],
+      "a": "go",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Laila her name is.",
+        "Is Laila her name.",
+        "Her name is Laila.",
+        "Name her is Laila."
+      ],
+      "a": "Her name is Laila.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My favorite animals are ___.",
+      "options": [
+        "buses",
+        "lions",
+        "flowers",
+        "trees"
+      ],
+      "a": "lions",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My uncle ___ a pilot.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "have"
+      ],
+      "a": "is",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ not eat fish.",
+      "options": [
+        "does",
+        "am",
+        "is",
+        "do"
+      ],
+      "a": "do",
+      "tag": "Grammar"
+    },
+    {
+      "q": "This is ___ father.",
+      "options": [
+        "he",
+        "my",
+        "his",
+        "her"
+      ],
+      "a": "my",
+      "tag": "Grammar"
+    },
+    {
+      "q": "At the zoo, we can see ___.",
+      "options": [
+        "monkeys",
+        "libraries",
+        "tickets",
+        "stations"
+      ],
+      "a": "monkeys",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word that begins with the letters wh.",
+      "options": [
+        "chere",
+        "shere",
+        "where",
+        "there"
+      ],
+      "a": "where",
+      "tag": "Phonics"
+    },
+    {
+      "q": "We eat ___ at lunchtime.",
+      "options": [
+        "curtains",
+        "tickets",
+        "sticks",
+        "sandwiches"
+      ],
+      "a": "sandwiches",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word that begins with the letters wh.",
+      "options": [
+        "then",
+        "chen",
+        "shen",
+        "when"
+      ],
+      "a": "when",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Choose the word that begins with “ex”.",
+      "options": [
+        "mother",
+        "farm",
+        "happy",
+        "exam"
+      ],
+      "a": "exam",
+      "tag": "Phonics"
+    },
+    {
+      "q": "___ she visit her grandmother?",
+      "options": [
+        "Is",
+        "Are",
+        "Does",
+        "Do"
+      ],
+      "a": "Does",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My favorite drink is orange ___.",
+      "options": [
+        "fruit",
+        "lunch",
+        "juice",
+        "cake"
+      ],
+      "a": "juice",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “My name is Sara. I am eight years old. I am in Primary 3. I am from Egypt.” How old is Sara?",
+      "options": [
+        "eight",
+        "nine",
+        "ten",
+        "seven"
+      ],
+      "a": "eight",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “My name is Sara. I am eight years old. I am in Primary 3. I am from Egypt.” Where is Sara from?",
+      "options": [
+        "England",
+        "Primary 3",
+        "school",
+        "Egypt"
+      ],
+      "a": "Egypt",
+      "tag": "Reading"
+    },
+    {
+      "q": "The children ate sandwiches and ___.",
+      "options": [
+        "rooms",
+        "chips",
+        "tickets",
+        "books"
+      ],
+      "a": "chips",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He ___ his room yesterday.",
+      "options": [
+        "clean",
+        "cleans",
+        "cleaning",
+        "cleaned"
+      ],
+      "a": "cleaned",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "My Mother Is A Teacher",
+        "My mother is a teacher.",
+        "My mother is a teacher?",
+        "my mother is a teacher."
+      ],
+      "a": "My mother is a teacher.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “My name is Sara. I am eight years old. I am in Primary 3. I am from Egypt.” What is Sara’s class?",
+      "options": [
+        "Primary 4",
+        "classroom",
+        "Primary 3",
+        "Primary 1"
+      ],
+      "a": "Primary 3",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which sentence introduces a person?",
+      "options": [
+        "This is my uncle.",
+        "My uncle cooks.",
+        "I visit my uncle.",
+        "His job is great."
+      ],
+      "a": "This is my uncle.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “My name is Fares. I live in Cairo. Fridays are my favorite days. On Fridays, I visit my grandfather’s farm. My grandfather lives with my grandmother in a big house.” What is Fares’s favorite day?",
+      "options": [
+        "Friday",
+        "Sunday",
+        "Monday",
+        "Tuesday"
+      ],
+      "a": "Friday",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “My name is Fares. I live in Cairo. Fridays are my favorite days. On Fridays, I visit my grandfather’s farm. My grandfather lives with my grandmother in a big house.” Where does Fares go on Fridays?",
+      "options": [
+        "his school",
+        "a hospital",
+        "a garden",
+        "his grandfather’s farm"
+      ],
+      "a": "his grandfather’s farm",
+      "tag": "Reading"
+    },
+    {
+      "q": "We ___ to the zoo by bus last Monday.",
+      "options": [
+        "goes",
+        "going",
+        "went",
+        "go"
+      ],
+      "a": "went",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “My name is Fares. I live in Cairo. Fridays are my favorite days. On Fridays, I visit my grandfather’s farm. My grandfather lives with my grandmother in a big house.” Who lives with Fares’s grandfather?",
+      "options": [
+        "his cousin",
+        "his sister",
+        "his grandmother",
+        "his aunt"
+      ],
+      "a": "his grandmother",
+      "tag": "Reading"
+    },
+    {
+      "q": "The girl ___ with her ball last week.",
+      "options": [
+        "plays",
+        "played",
+        "play",
+        "playing"
+      ],
+      "a": "played",
+      "tag": "Grammar"
+    },
+    {
+      "q": "She helps her friends. She is ___.",
+      "options": [
+        "short",
+        "brown",
+        "helpful",
+        "loud"
+      ],
+      "a": "helpful",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "options": [
+        "He name is Fady.",
+        "Him name is Fady.",
+        "His is name Fady.",
+        "His name is Fady."
+      ],
+      "a": "His name is Fady.",
+      "tag": "Grammar"
+    }
+  ],
+  "5": [
+    {
+      "q": "They ___ lions and monkeys at the zoo yesterday.",
+      "options": [
+        "saw",
+        "see",
+        "sees",
+        "seeing"
+      ],
+      "a": "saw",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which sentence is about breakfast?",
+      "options": [
+        "I eat breakfast at seven.",
+        "I have curly hair.",
+        "I am from Egypt.",
+        "I am helpful."
+      ],
+      "a": "I eat breakfast at seven.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which sentence is a classroom rule?",
+      "options": [
+        "Eat in class.",
+        "Shout loudly.",
+        "Run between desks.",
+        "Listen to your teacher."
+      ],
+      "a": "Listen to your teacher.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The children ___ orange juice yesterday.",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking",
+        "drank"
+      ],
+      "a": "drank",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I like to ___ cartoons on TV.",
+      "options": [
+        "write",
+        "watch",
+        "wash",
+        "draw"
+      ],
+      "a": "watch",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "She ___ a trip to the Pyramids last week.",
+      "options": [
+        "have",
+        "having",
+        "had",
+        "has"
+      ],
+      "a": "had",
+      "tag": "Grammar"
+    },
+    {
+      "q": "A person who makes bread and cakes is a ___.",
+      "options": [
+        "teacher",
+        "doctor",
+        "baker",
+        "farmer"
+      ],
+      "a": "baker",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Egyptian soldiers are very ___.",
+      "options": [
+        "bad",
+        "sad",
+        "brave",
+        "weak"
+      ],
+      "a": "brave",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My mother cooks food in the ___.",
+      "options": [
+        "school",
+        "garden",
+        "kitchen",
+        "farm"
+      ],
+      "a": "kitchen",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ a book at the library yesterday.",
+      "options": [
+        "readed",
+        "read",
+        "reads",
+        "reading"
+      ],
+      "a": "read",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My family helps me ___ to be good and kind.",
+      "options": [
+        "bake",
+        "go",
+        "grow",
+        "take"
+      ],
+      "a": "grow",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct answer: A baby boy is a baby ___.",
+      "options": [
+        "aunt",
+        "cousin",
+        "grandmother",
+        "brother"
+      ],
+      "a": "brother",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We eat ___ fish on Sham El-Nessim.",
+      "options": [
+        "salted",
+        "brave",
+        "favorite",
+        "healthy"
+      ],
+      "a": "salted",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He ___ a ticket for the zoo yesterday.",
+      "options": [
+        "bought",
+        "buys",
+        "buy",
+        "buying"
+      ],
+      "a": "bought",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My grandmother ___ delicious food.",
+      "options": [
+        "cooks",
+        "visits",
+        "helps",
+        "reads"
+      ],
+      "a": "cooks",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We ___ sandwiches for lunch yesterday.",
+      "options": [
+        "eat",
+        "eats",
+        "eating",
+        "ate"
+      ],
+      "a": "ate",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "My name is Ali.",
+        "Name my is Ali.",
+        "Ali is name my.",
+        "Is my Ali name."
+      ],
+      "a": "My name is Ali.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ to school every morning.",
+      "options": [
+        "going",
+        "goes",
+        "go",
+        "is go"
+      ],
+      "a": "goes",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The bus ___ at the station yesterday.",
+      "options": [
+        "stops",
+        "stopping",
+        "stopped",
+        "stop"
+      ],
+      "a": "stopped",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I have a cat. ___ cat is cute.",
+      "options": [
+        "Her",
+        "He",
+        "My",
+        "His"
+      ],
+      "a": "My",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My mother ___ very kind.",
+      "options": [
+        "am",
+        "are",
+        "have",
+        "is"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The cat is ___ two chairs.",
+      "options": [
+        "on",
+        "under",
+        "between"
+      ],
+      "a": "between",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "What Do You Do In The Morning",
+        "What do you do in the morning?",
+        "What do you do in the morning.",
+        "what do you do in the morning?"
+      ],
+      "a": "What do you do in the morning?",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "I go to school at 8 a.m.",
+        "Go I school to at 8 a.m.",
+        "At school I go to 8 a.m.",
+        "I school go at to 8 a.m."
+      ],
+      "a": "I go to school at 8 a.m.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Hassan is a doctor. ___ job is great.",
+      "options": [
+        "My",
+        "His",
+        "Her",
+        "He"
+      ],
+      "a": "His",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "___ to your teachers carefully.",
+      "options": [
+        "Listened",
+        "Listen",
+        "Listens",
+        "Listening"
+      ],
+      "a": "Listen",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The car is in ___ of the school.",
+      "options": [
+        "under",
+        "front",
+        "between"
+      ],
+      "a": "front",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The book is ___ the bag.",
+      "options": [
+        "in",
+        "on",
+        "between"
+      ],
+      "a": "in",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ a doctor.",
+      "options": [
+        "are",
+        "am",
+        "has",
+        "is"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The supermarket is ___ to my house.",
+      "options": [
+        "under",
+        "between",
+        "next"
+      ],
+      "a": "next",
+      "tag": "Grammar"
+    }
+  ],
+  "6": [
+    {
+      "q": "Noura has a blue dress. ___ dress is beautiful.",
+      "options": [
+        "Her",
+        "His",
+        "She",
+        "My"
+      ],
+      "a": "Her",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The dog ___ my family now.",
+      "options": [
+        "loving",
+        "loved",
+        "loves",
+        "love"
+      ],
+      "a": "loves",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My grandparents ___ in a big house now.",
+      "options": [
+        "lives",
+        "living",
+        "lived",
+        "live"
+      ],
+      "a": "live",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The hospital is ___ the school and the bank.",
+      "options": [
+        "in",
+        "between",
+        "on"
+      ],
+      "a": "between",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ not read the story.",
+      "options": [
+        "is",
+        "are",
+        "does",
+        "do"
+      ],
+      "a": "does",
+      "tag": "Grammar"
+    },
+    {
+      "q": "___ they play in the garden?",
+      "options": [
+        "Am",
+        "Do",
+        "Does",
+        "Is"
+      ],
+      "a": "Do",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Last Sunday, Grade six students went on a trip to the Pyramids in Giza. They went by bus. At the Pyramids, they saw camels and horses. They rode a horse and took photos.” What animal did they ride?",
+      "options": [
+        "a camel",
+        "a bus",
+        "a train",
+        "a horse"
+      ],
+      "a": "a horse",
+      "tag": "Reading"
+    },
+    {
+      "q": "My grandfather has a farm. ___ farm is big.",
+      "options": [
+        "Her",
+        "My",
+        "He",
+        "His"
+      ],
+      "a": "His",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My brother helps ___ with my homework.",
+      "options": [
+        "her",
+        "me",
+        "my",
+        "his"
+      ],
+      "a": "me",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Last Sunday, Grade six students went on a trip to the Pyramids in Giza. They went by bus. At the Pyramids, they saw camels and horses. They rode a horse and took photos.” What did they take?",
+      "options": [
+        "books",
+        "lunch",
+        "photos",
+        "tickets"
+      ],
+      "a": "photos",
+      "tag": "Reading"
+    },
+    {
+      "q": "She ___ a baby brother.",
+      "options": [
+        "have",
+        "is",
+        "are",
+        "has"
+      ],
+      "a": "has",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Ayla visited the Cairo Tower with her family. They took nice pictures and saw the whole city. Then, they travelled to Alexandria. At the Alexandria Library, she read fun books.” What did Ayla visit first?",
+      "options": [
+        "the supermarket",
+        "Cairo Tower",
+        "the Pyramids",
+        "the zoo"
+      ],
+      "a": "Cairo Tower",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which word has “wh”?",
+      "options": [
+        "that",
+        "chair",
+        "white",
+        "shirt"
+      ],
+      "a": "white",
+      "tag": "Phonics"
+    },
+    {
+      "q": "The word “whale” starts with ___.",
+      "options": [
+        "sh",
+        "ch",
+        "th",
+        "wh"
+      ],
+      "a": "wh",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Eman brushes ___ teeth every morning.",
+      "options": [
+        "she",
+        "her",
+        "his",
+        "my"
+      ],
+      "a": "her",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Ayla visited the Cairo Tower with her family. They took nice pictures and saw the whole city. Then, they travelled to Alexandria. At the Alexandria Library, she read fun books.” Where did they travel?",
+      "options": [
+        "Alexandria",
+        "Luxor",
+        "Cairo",
+        "Aswan"
+      ],
+      "a": "Alexandria",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which word has the /gz/ sound?",
+      "options": [
+        "garden",
+        "mother",
+        "exam",
+        "family"
+      ],
+      "a": "exam",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “Ayla visited the Cairo Tower with her family. They took nice pictures and saw the whole city. Then, they travelled to Alexandria. At the Alexandria Library, she read fun books.” What did Ayla do at the library?",
+      "options": [
+        "played football",
+        "ate lunch",
+        "saw animals",
+        "read fun books"
+      ],
+      "a": "read fun books",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Amal wakes up at 6:30. She eats breakfast, goes to school, and plays with her friends after school.” What time does Amal wake up?",
+      "options": [
+        "8:00",
+        "9:00",
+        "6:30",
+        "7:30"
+      ],
+      "a": "6:30",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Amal wakes up at 6:30. She eats breakfast, goes to school, and plays with her friends after school.” What does she do after school?",
+      "options": [
+        "plays with her friends",
+        "eats breakfast",
+        "goes to bed",
+        "raises her hand"
+      ],
+      "a": "plays with her friends",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Saw they monkeys and lions.",
+        "Lions they saw and monkeys.",
+        "And monkeys saw they lions.",
+        "They saw lions and monkeys."
+      ],
+      "a": "They saw lions and monkeys.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Amal wakes up at 6:30. She eats breakfast, goes to school, and plays with her friends after school.” What does she do after waking up?",
+      "options": [
+        "goes to bed",
+        "does homework",
+        "watches TV",
+        "eats breakfast"
+      ],
+      "a": "eats breakfast",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which sentence is about a celebration?",
+      "options": [
+        "My sister reads a book.",
+        "My uncle has a farm.",
+        "We eat salted fish on Sham El-Nessim.",
+        "My father is a doctor."
+      ],
+      "a": "We eat salted fish on Sham El-Nessim.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “On Sham El-Nessim, my family goes to the garden. We eat salted fish and eggs. We play games and feel happy.” Where does the family go?",
+      "options": [
+        "the school",
+        "the farm",
+        "the garden",
+        "the hospital"
+      ],
+      "a": "the garden",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "A school she went trip on.",
+        "Trip went she on school a.",
+        "She went on a school trip.",
+        "Went she trip school a on."
+      ],
+      "a": "She went on a school trip.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which sentence is about a family member?",
+      "options": [
+        "My cousin is kind.",
+        "My cousin is a celebration.",
+        "My cousin cooks a farm.",
+        "My cousin is a job."
+      ],
+      "a": "My cousin is kind.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word with the /k/ sound.",
+      "options": [
+        "rain",
+        "pen",
+        "sing",
+        "lock"
+      ],
+      "a": "lock",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “On Sham El-Nessim, my family goes to the garden. We eat salted fish and eggs. We play games and feel happy.” How do they feel?",
+      "options": [
+        "tired",
+        "happy",
+        "sad",
+        "angry"
+      ],
+      "a": "happy",
+      "tag": "Reading"
+    },
+    {
+      "q": "After school, I go home and do my ___.",
+      "options": [
+        "homework",
+        "breakfast",
+        "class",
+        "bed"
+      ],
+      "a": "homework",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which action happens at school?",
+      "options": [
+        "go to bed",
+        "study",
+        "sleep at home",
+        "eat dinner"
+      ],
+      "a": "study",
+      "tag": "Vocabulary"
+    }
+  ],
+  "7": [
+    {
+      "q": "Choose the word that means “a person in a family.”",
+      "options": [
+        "soldier",
+        "favorite",
+        "member",
+        "garden"
+      ],
+      "a": "member",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I have a big bed in my ___.",
+      "options": [
+        "curtain",
+        "station",
+        "room",
+        "table"
+      ],
+      "a": "room",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ my breakfast at 7 o’clock.",
+      "options": [
+        "run",
+        "eat",
+        "draw",
+        "write"
+      ],
+      "a": "eat",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "How ___ are you? - I am eight years old.",
+      "options": [
+        "kind",
+        "late",
+        "old",
+        "name"
+      ],
+      "a": "old",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I sit on the ___.",
+      "options": [
+        "ticket",
+        "couch",
+        "hair",
+        "toy"
+      ],
+      "a": "couch",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which action comes first in the morning?",
+      "options": [
+        "do homework",
+        "go to bed",
+        "watch TV at night",
+        "wake up"
+      ],
+      "a": "wake up",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "There is a nice ___ on the window.",
+      "options": [
+        "curtain",
+        "chair",
+        "couch",
+        "table"
+      ],
+      "a": "curtain",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "A person who flies a plane is a ___.",
+      "options": [
+        "baker",
+        "doctor",
+        "soldier",
+        "pilot"
+      ],
+      "a": "pilot",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The streets are busy and the cars are ___.",
+      "options": [
+        "run",
+        "pulled",
+        "happy",
+        "stuck"
+      ],
+      "a": "stuck",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My uncle’s ___ is a doctor.",
+      "options": [
+        "garden",
+        "job",
+        "family",
+        "food"
+      ],
+      "a": "job",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “My family is small. I have a mother, a father and one sister. My father is a doctor. My mother is a teacher. My sister is six years old.” How many sisters does the child have?",
+      "options": [
+        "four",
+        "one",
+        "two",
+        "three"
+      ],
+      "a": "one",
+      "tag": "Reading"
+    },
+    {
+      "q": "Samy used a ___ to pull out the toy car.",
+      "options": [
+        "pencil",
+        "book",
+        "stick",
+        "pen"
+      ],
+      "a": "stick",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My grandmother reads me a ___.",
+      "options": [
+        "bus",
+        "food",
+        "farm",
+        "story"
+      ],
+      "a": "story",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My cousin is my family ___.",
+      "options": [
+        "member",
+        "soldier",
+        "celebration",
+        "farmer"
+      ],
+      "a": "member",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Samy put the toy car on the ___.",
+      "options": [
+        "floor",
+        "table",
+        "couch",
+        "curtain"
+      ],
+      "a": "table",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "They ___ football after school.",
+      "options": [
+        "eats",
+        "play",
+        "plays",
+        "playing"
+      ],
+      "a": "play",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “My family is small. I have a mother, a father and one sister. My father is a doctor. My mother is a teacher. My sister is six years old.” What is the father’s job?",
+      "options": [
+        "doctor",
+        "teacher",
+        "farmer",
+        "pilot"
+      ],
+      "a": "doctor",
+      "tag": "Reading"
+    },
+    {
+      "q": "We went to Alexandria by ___.",
+      "options": [
+        "train",
+        "park",
+        "library",
+        "ticket"
+      ],
+      "a": "train",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ eight years old.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "has"
+      ],
+      "a": "am",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ hard at school.",
+      "options": [
+        "studies",
+        "studying",
+        "wakes",
+        "study"
+      ],
+      "a": "study",
+      "tag": "Grammar"
+    },
+    {
+      "q": "They ___ to Alexandria by train last week.",
+      "options": [
+        "travels",
+        "travelling",
+        "travelled",
+        "travel"
+      ],
+      "a": "travelled",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “My family is small. I have a mother, a father and one sister. My father is a doctor. My mother is a teacher. My sister is six years old.” How old is the sister?",
+      "options": [
+        "seven",
+        "eight",
+        "nine",
+        "six"
+      ],
+      "a": "six",
+      "tag": "Reading"
+    },
+    {
+      "q": "___ you study English every day?",
+      "options": [
+        "Does",
+        "Are",
+        "Is",
+        "Do"
+      ],
+      "a": "Do",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ the movie on TV last night.",
+      "options": [
+        "watching",
+        "watched",
+        "watch",
+        "watches"
+      ],
+      "a": "watched",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Live where you do?",
+        "Where do you live?",
+        "Do where live you?",
+        "You where do live?"
+      ],
+      "a": "Where do you live?",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ a good day at the zoo last Monday.",
+      "options": [
+        "had",
+        "have",
+        "has",
+        "having"
+      ],
+      "a": "had",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I ___ breakfast with my family every morning.",
+      "options": [
+        "eating",
+        "is eat",
+        "eat",
+        "eats"
+      ],
+      "a": "eat",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My sister has a cute ___.",
+      "options": [
+        "celebration",
+        "farm",
+        "pet",
+        "job"
+      ],
+      "a": "pet",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "Who is this?",
+        "Who is this.",
+        "who is this?",
+        "Who Is This"
+      ],
+      "a": "Who is this?",
+      "tag": "Grammar"
+    },
+    {
+      "q": "This is Mona. ___ mother is a teacher.",
+      "options": [
+        "His",
+        "My",
+        "She",
+        "Her"
+      ],
+      "a": "Her",
+      "tag": "Grammar"
+    }
+  ],
+  "8": [
+    {
+      "q": "The toy car ___ under the couch yesterday.",
+      "options": [
+        "roll",
+        "rolls",
+        "rolling",
+        "rolled"
+      ],
+      "a": "rolled",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The farmer ___ animals every morning.",
+      "options": [
+        "feed",
+        "feeding",
+        "fed",
+        "feeds"
+      ],
+      "a": "feeds",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Samy ___ for the toy behind the TV yesterday.",
+      "options": [
+        "looks",
+        "looking",
+        "looked",
+        "look"
+      ],
+      "a": "looked",
+      "tag": "Grammar"
+    },
+    {
+      "q": "___ you have a big family?",
+      "options": [
+        "Does",
+        "Are",
+        "Is",
+        "Do"
+      ],
+      "a": "Do",
+      "tag": "Grammar"
+    },
+    {
+      "q": "His sister ___ him yesterday.",
+      "options": [
+        "helping",
+        "helped",
+        "help",
+        "helps"
+      ],
+      "a": "helped",
+      "tag": "Grammar"
+    },
+    {
+      "q": "They ___ happy at the celebration.",
+      "options": [
+        "am",
+        "has",
+        "are",
+        "is"
+      ],
+      "a": "are",
+      "tag": "Grammar"
+    },
+    {
+      "q": "___ is my sister.",
+      "options": [
+        "This",
+        "These",
+        "They",
+        "He"
+      ],
+      "a": "This",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "This is my aunt. ___ name is Hala.",
+      "options": [
+        "My",
+        "She",
+        "Her",
+        "His"
+      ],
+      "a": "Her",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "what is your favorite celebration?",
+        "What Is Your Favorite Celebration",
+        "What is your favorite celebration?",
+        "What is your favorite celebration."
+      ],
+      "a": "What is your favorite celebration?",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ the toy car between the chairs yesterday.",
+      "options": [
+        "checked",
+        "check",
+        "checks",
+        "checking"
+      ],
+      "a": "checked",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The car was ___.",
+      "options": [
+        "stick",
+        "sticks",
+        "sticking",
+        "stuck"
+      ],
+      "a": "stuck",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which word has “wh”?",
+      "options": [
+        "three",
+        "wheel",
+        "cheese",
+        "sheep"
+      ],
+      "a": "wheel",
+      "tag": "Phonics"
+    },
+    {
+      "q": "My grandparents ___ in a big house.",
+      "options": [
+        "lives",
+        "living",
+        "lived",
+        "live"
+      ],
+      "a": "live",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the word that begins with the letters wh.",
+      "options": [
+        "shy",
+        "thy",
+        "chy",
+        "why"
+      ],
+      "a": "why",
+      "tag": "Phonics"
+    },
+    {
+      "q": "My sister ___ pictures.",
+      "options": [
+        "drawing",
+        "drew",
+        "draws",
+        "draw"
+      ],
+      "a": "draws",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The girl ___ her room yesterday.",
+      "options": [
+        "cleans",
+        "cleaning",
+        "cleaned",
+        "clean"
+      ],
+      "a": "cleaned",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the word that begins with “ex”.",
+      "options": [
+        "exit",
+        "family",
+        "garden",
+        "doctor"
+      ],
+      "a": "exit",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “Tala is very helpful and funny. She always helps her friends do their homework. She has long black hair and brown eyes.” What kind of person is Tala?",
+      "options": [
+        "short and loud",
+        "sad and shy",
+        "helpful and funny",
+        "angry and lazy"
+      ],
+      "a": "helpful and funny",
+      "tag": "Reading"
+    },
+    {
+      "q": "My mother ___ dinner last night.",
+      "options": [
+        "cooking",
+        "cooked",
+        "cook",
+        "cooks"
+      ],
+      "a": "cooked",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Tala is very helpful and funny. She always helps her friends do their homework. She has long black hair and brown eyes.” What color are Tala’s eyes?",
+      "options": [
+        "black",
+        "brown",
+        "green",
+        "blue"
+      ],
+      "a": "brown",
+      "tag": "Reading"
+    },
+    {
+      "q": "The TV is ___ the chair and the couch.",
+      "options": [
+        "from",
+        "between",
+        "on"
+      ],
+      "a": "between",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ our mother on Mother’s Day.",
+      "options": [
+        "helped",
+        "help",
+        "helps",
+        "helping"
+      ],
+      "a": "help",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Mona lives in a big house with her family. She helps her friend do his homework. She helps her father clean his car. Her mother cooks delicious food.” Who does Mona help with homework?",
+      "options": [
+        "her mother",
+        "her grandfather",
+        "her cousin",
+        "her friend"
+      ],
+      "a": "her friend",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Mona lives in a big house with her family. She helps her friend do his homework. She helps her father clean his car. Her mother cooks delicious food.” Who cooks delicious food?",
+      "options": [
+        "her father",
+        "her friend",
+        "her mother",
+        "her sister"
+      ],
+      "a": "her mother",
+      "tag": "Reading"
+    },
+    {
+      "q": "The toy is ___ the table.",
+      "options": [
+        "under",
+        "between",
+        "in"
+      ],
+      "a": "under",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Mona lives in a big house with her family. She helps her friend do his homework. She helps her father clean his car. Her mother cooks delicious food.” What does Mona help her father clean?",
+      "options": [
+        "his car",
+        "the farm",
+        "the kitchen",
+        "the garden"
+      ],
+      "a": "his car",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “One day, Samy was playing in his room when his toy car rolled under the couch. He looked for it behind the curtain and in front of the TV. His sister used a stick to pull it out.” What did Samy’s sister use?",
+      "options": [
+        "a pencil",
+        "a book",
+        "a stick",
+        "a pen"
+      ],
+      "a": "a stick",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which sentence describes a friendly person?",
+      "options": [
+        "He never helps anyone.",
+        "He says hello to everyone.",
+        "He shouts at everyone.",
+        "He sleeps in class."
+      ],
+      "a": "He says hello to everyone.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I can ___ many animals in the zoo.",
+      "options": [
+        "run",
+        "thank",
+        "ask",
+        "see"
+      ],
+      "a": "see",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The baby ___ a lot.",
+      "options": [
+        "cries",
+        "cry",
+        "crying",
+        "cried"
+      ],
+      "a": "cries",
+      "tag": "Vocabulary"
+    }
+  ],
+  "9": [
+    {
+      "q": "Read: “My name is Tarek. I visit many places every year. I visit Cairo Tower with my family and take pictures. We can see the whole city from there. We can also see the Pyramids of Giza.” What does Tarek take?",
+      "options": [
+        "sandwiches",
+        "pictures",
+        "tickets",
+        "books"
+      ],
+      "a": "pictures",
+      "tag": "Reading"
+    },
+    {
+      "q": "Nice to ___ you.",
+      "options": [
+        "meet",
+        "ask",
+        "count",
+        "write"
+      ],
+      "a": "meet",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “My name is Tarek. I visit many places every year. I visit Cairo Tower with my family and take pictures. We can see the whole city from there. We can also see the Pyramids of Giza.” What can they see from Cairo Tower?",
+      "options": [
+        "the whole city",
+        "the zoo only",
+        "the supermarket",
+        "the station"
+      ],
+      "a": "the whole city",
+      "tag": "Reading"
+    },
+    {
+      "q": "The classroom rule is to ___ to the teacher.",
+      "options": [
+        "listen",
+        "shout",
+        "run",
+        "sleep"
+      ],
+      "a": "listen",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct answer: We go to the ___ to play.",
+      "options": [
+        "garden",
+        "hospital",
+        "job",
+        "soldier"
+      ],
+      "a": "garden",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I am from ___.",
+      "options": [
+        "meet",
+        "Egypt",
+        "Lina",
+        "nine"
+      ],
+      "a": "Egypt",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “My name is Tarek. I visit many places every year. I visit Cairo Tower with my family and take pictures. We can see the whole city from there. We can also see the Pyramids of Giza.” What places does Tarek visit?",
+      "options": [
+        "the hospital and school",
+        "the park and station",
+        "the supermarket and zoo",
+        "Cairo Tower and the Pyramids"
+      ],
+      "a": "Cairo Tower and the Pyramids",
+      "tag": "Reading"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "what animals did they see?",
+        "What Animals Did They See",
+        "What animals did they see?",
+        "What animals did they see."
+      ],
+      "a": "What animals did they see?",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My brother ___ me do my homework.",
+      "options": [
+        "helps",
+        "cooks",
+        "reads",
+        "visits"
+      ],
+      "a": "helps",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "A person who grows plants and food is a ___.",
+      "options": [
+        "farmer",
+        "doctor",
+        "pilot",
+        "teacher"
+      ],
+      "a": "farmer",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "Grandma Baked A Nice Cake",
+        "Grandma baked a nice cake.",
+        "Grandma baked a nice cake?",
+        "grandma baked a nice cake."
+      ],
+      "a": "Grandma baked a nice cake.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My mother’s sister is my ___.",
+      "options": [
+        "uncle",
+        "cousin",
+        "grandfather",
+        "aunt"
+      ],
+      "a": "aunt",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct answer: My father’s mother is my ___.",
+      "options": [
+        "cousin",
+        "sister",
+        "grandmother",
+        "aunt"
+      ],
+      "a": "grandmother",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The opposite of “sad” is ___.",
+      "options": [
+        "favorite",
+        "happy",
+        "brave",
+        "salty"
+      ],
+      "a": "happy",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct ending: sti__.",
+      "options": [
+        "ch",
+        "sh",
+        "ck",
+        "sk"
+      ],
+      "a": "ck",
+      "tag": "Phonics"
+    },
+    {
+      "q": "I ___ at 7 a.m. every day.",
+      "options": [
+        "waking up",
+        "is wake up",
+        "wake up",
+        "wakes up"
+      ],
+      "a": "wake up",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My father helps me ___ my bike.",
+      "options": [
+        "clean",
+        "cleans",
+        "cleaning",
+        "cleaned"
+      ],
+      "a": "clean",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "A place with many animals is a ___.",
+      "options": [
+        "supermarket",
+        "zoo",
+        "library",
+        "station"
+      ],
+      "a": "zoo",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "___ your classroom clean.",
+      "options": [
+        "Keep",
+        "Keeps",
+        "Keeping",
+        "Kept"
+      ],
+      "a": "Keep",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The teacher ___ at the board.",
+      "options": [
+        "look",
+        "looking",
+        "looked",
+        "looks"
+      ],
+      "a": "looks",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The Pyramids are very ___.",
+      "options": [
+        "big",
+        "small",
+        "stuck",
+        "busy"
+      ],
+      "a": "big",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We watch the ducks ___.",
+      "options": [
+        "brave",
+        "favorite",
+        "cooking",
+        "swimming"
+      ],
+      "a": "swimming",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Nader ___ football after school.",
+      "options": [
+        "playing",
+        "is play",
+        "plays",
+        "play"
+      ],
+      "a": "plays",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We go to the ___ to buy food.",
+      "options": [
+        "museum",
+        "park",
+        "tower",
+        "supermarket"
+      ],
+      "a": "supermarket",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We ___ in the classroom.",
+      "options": [
+        "is",
+        "has",
+        "are",
+        "am"
+      ],
+      "a": "are",
+      "tag": "Grammar"
+    },
+    {
+      "q": "He ___ friendly.",
+      "options": [
+        "am",
+        "have",
+        "is",
+        "are"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Friday is a ___.",
+      "options": [
+        "busy room",
+        "station",
+        "holiday",
+        "school day"
+      ],
+      "a": "holiday",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My friends ___ helpful.",
+      "options": [
+        "has",
+        "are",
+        "is",
+        "am"
+      ],
+      "a": "are",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We ___ stories together.",
+      "options": [
+        "reading",
+        "readed",
+        "read",
+        "reads"
+      ],
+      "a": "read",
+      "tag": "Grammar"
+    },
+    {
+      "q": "A person who travels goes on a ___.",
+      "options": [
+        "chair",
+        "trip",
+        "table",
+        "curtain"
+      ],
+      "a": "trip",
+      "tag": "Vocabulary"
+    }
+  ],
+  "10": [
+    {
+      "q": "We can read books in a ___.",
+      "options": [
+        "library",
+        "zoo",
+        "station",
+        "hospital"
+      ],
+      "a": "library",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My grandfather has many animals on his ___.",
+      "options": [
+        "hospital",
+        "kitchen",
+        "farm",
+        "school"
+      ],
+      "a": "farm",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "That is Adam. ___ book is blue.",
+      "options": [
+        "He",
+        "My",
+        "His",
+        "Her"
+      ],
+      "a": "His",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The children ___ in the garden every day.",
+      "options": [
+        "plays",
+        "playing",
+        "played",
+        "play"
+      ],
+      "a": "play",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The baby ___ a lot every night.",
+      "options": [
+        "cries",
+        "cry",
+        "crying",
+        "cried"
+      ],
+      "a": "cries",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We can see old things in a ___.",
+      "options": [
+        "supermarket",
+        "park",
+        "room",
+        "museum"
+      ],
+      "a": "museum",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "This ___ my cousin.",
+      "options": [
+        "are",
+        "am",
+        "has",
+        "is"
+      ],
+      "a": "is",
+      "tag": "Grammar"
+    },
+    {
+      "q": "I ___ a movie yesterday.",
+      "options": [
+        "watching",
+        "watched",
+        "watch",
+        "watches"
+      ],
+      "a": "watched",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The opposite of “weak” is ___.",
+      "options": [
+        "strong",
+        "sad",
+        "small",
+        "kind"
+      ],
+      "a": "strong",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which word has “wh”?",
+      "options": [
+        "shoe",
+        "think",
+        "whale",
+        "chair"
+      ],
+      "a": "whale",
+      "tag": "Phonics"
+    },
+    {
+      "q": "He ___ a new camera last month.",
+      "options": [
+        "bought",
+        "buy",
+        "buys",
+        "buying"
+      ],
+      "a": "bought",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the word with the missing letters: e__amine.",
+      "options": [
+        "x",
+        "sh",
+        "ch",
+        "th"
+      ],
+      "a": "x",
+      "tag": "Phonics"
+    },
+    {
+      "q": "A baby girl in my family is my baby ___.",
+      "options": [
+        "uncle",
+        "grandfather",
+        "cousin",
+        "sister"
+      ],
+      "a": "sister",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The students ___ to the zoo last Monday.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "went"
+      ],
+      "a": "went",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which word has the /gz/ sound?",
+      "options": [
+        "farm",
+        "exist",
+        "father",
+        "baker"
+      ],
+      "a": "exist",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “Asser is a student in Primary 3. He listens carefully. He raises his hand to answer. He doesn’t run or shout.” What does Asser do to answer?",
+      "options": [
+        "He sleeps.",
+        "He raises his hand.",
+        "He runs.",
+        "He shouts."
+      ],
+      "a": "He raises his hand.",
+      "tag": "Reading"
+    },
+    {
+      "q": "She ___ orange juice at lunch yesterday.",
+      "options": [
+        "drinks",
+        "drinking",
+        "drank",
+        "drink"
+      ],
+      "a": "drank",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Asser is a student in Primary 3. He listens carefully. He raises his hand to answer. He doesn’t run or shout.” What doesn’t Asser do?",
+      "options": [
+        "listen carefully",
+        "raise his hand",
+        "answer",
+        "run or shout"
+      ],
+      "a": "run or shout",
+      "tag": "Reading"
+    },
+    {
+      "q": "My aunt ___ cakes.",
+      "options": [
+        "bakes",
+        "bake",
+        "baking",
+        "baked"
+      ],
+      "a": "bakes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We ___ camels at the zoo last Monday.",
+      "options": [
+        "seeing",
+        "saw",
+        "see",
+        "sees"
+      ],
+      "a": "saw",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Mother’s Day is on 21st March. Every year, we buy a present for our mother and make a color card for her. Mothers feel happy when we give them presents to say thank you.” When is Mother’s Day?",
+      "options": [
+        "6th October",
+        "1st January",
+        "25th December",
+        "21st March"
+      ],
+      "a": "21st March",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “Mother’s Day is on 21st March. Every year, we buy a present for our mother and make a color card for her. Mothers feel happy when we give them presents to say thank you.” What do children buy?",
+      "options": [
+        "a pet",
+        "a job",
+        "a present",
+        "a farm"
+      ],
+      "a": "a present",
+      "tag": "Reading"
+    },
+    {
+      "q": "The children ___ a good day yesterday.",
+      "options": [
+        "had",
+        "have",
+        "has",
+        "having"
+      ],
+      "a": "had",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Mother’s Day is on 21st March. Every year, we buy a present for our mother and make a color card for her. Mothers feel happy when we give them presents to say thank you.” How do mothers feel?",
+      "options": [
+        "angry",
+        "happy",
+        "sad",
+        "weak"
+      ],
+      "a": "happy",
+      "tag": "Reading"
+    },
+    {
+      "q": "My family ___ the Pyramids last year.",
+      "options": [
+        "visit",
+        "visits",
+        "visiting",
+        "visited"
+      ],
+      "a": "visited",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “Mother’s Day is on 21st March. Every year, we buy a present for our mother and make a color card for her. Mothers feel happy when we give them presents to say thank you.” What is the main idea?",
+      "options": [
+        "Mother’s Day",
+        "Sham El-Nessim",
+        "Eid Al-Fitr",
+        "The farm"
+      ],
+      "a": "Mother’s Day",
+      "tag": "Reading"
+    },
+    {
+      "q": "The dog ___ my family.",
+      "options": [
+        "loving",
+        "loved",
+        "loves",
+        "love"
+      ],
+      "a": "loves",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "In the morning, we say ___.",
+      "options": [
+        "good morning",
+        "goodbye",
+        "good night",
+        "later"
+      ],
+      "a": "good morning",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I ___ my book at home yesterday.",
+      "options": [
+        "leaves",
+        "leaving",
+        "left",
+        "leave"
+      ],
+      "a": "left",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which word asks for a reason?",
+      "options": [
+        "where",
+        "when",
+        "what",
+        "why"
+      ],
+      "a": "why",
+      "tag": "Vocabulary"
+    }
+  ],
+  "11": [
+    {
+      "q": "I ___ my room every day.",
+      "options": [
+        "cleaned",
+        "clean",
+        "cleans",
+        "cleaning"
+      ],
+      "a": "clean",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He ___ to school at 7:00.",
+      "options": [
+        "plays",
+        "brushes",
+        "eats",
+        "goes"
+      ],
+      "a": "goes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "He ___ the door and went inside.",
+      "options": [
+        "opening",
+        "opened",
+        "open",
+        "opens"
+      ],
+      "a": "opened",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which word asks about a place?",
+      "options": [
+        "where",
+        "when",
+        "why",
+        "what"
+      ],
+      "a": "where",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "A family pet can be a dog or a ___.",
+      "options": [
+        "doctor",
+        "pilot",
+        "baker",
+        "cat"
+      ],
+      "a": "cat",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "They ___ a train ticket yesterday.",
+      "options": [
+        "bought",
+        "buy",
+        "buys",
+        "buying"
+      ],
+      "a": "bought",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My father ___ his car.",
+      "options": [
+        "cleans",
+        "clean",
+        "cleaning",
+        "cleaned"
+      ],
+      "a": "cleans",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Last Monday, Grade three students went on a trip to the zoo. They went by bus. At the zoo, they saw lions, monkeys, and elephants. The ticket was 20 pounds.” How much was the ticket?",
+      "options": [
+        "10 pounds",
+        "30 pounds",
+        "5 pounds",
+        "20 pounds"
+      ],
+      "a": "20 pounds",
+      "tag": "Reading"
+    },
+    {
+      "q": "We say “thank you” when someone gives us a ___.",
+      "options": [
+        "pet",
+        "present",
+        "farm",
+        "job"
+      ],
+      "a": "present",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct answer: My favorite food is ___.",
+      "options": [
+        "garden",
+        "chicken",
+        "doctor",
+        "family"
+      ],
+      "a": "chicken",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Last Sunday, Grade six students went on a trip to the Pyramids in Giza. They went by bus. At the Pyramids, they saw camels and horses. They rode a horse and took photos.” Where did they go?",
+      "options": [
+        "the library",
+        "Cairo Tower",
+        "the Pyramids",
+        "the zoo"
+      ],
+      "a": "the Pyramids",
+      "tag": "Reading"
+    },
+    {
+      "q": "We visit our grandfather on his ___.",
+      "options": [
+        "housework",
+        "farm",
+        "hospital",
+        "school"
+      ],
+      "a": "farm",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Adam ___ cartoons in the evening.",
+      "options": [
+        "watch",
+        "watching",
+        "watchs",
+        "watches"
+      ],
+      "a": "watches",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The farmer ___ animals.",
+      "options": [
+        "feed",
+        "feeding",
+        "fed",
+        "feeds"
+      ],
+      "a": "feeds",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which word has the /k/ sound at the end?",
+      "options": [
+        "dog",
+        "sock",
+        "rain",
+        "pen"
+      ],
+      "a": "sock",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Noha and Amira ___ their beds.",
+      "options": [
+        "is make",
+        "make",
+        "makes",
+        "making"
+      ],
+      "a": "make",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Animals such as elephants live in the ___.",
+      "options": [
+        "zoo",
+        "library",
+        "station",
+        "supermarket"
+      ],
+      "a": "zoo",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My friends ___ to school on foot every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "is go"
+      ],
+      "a": "go",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We use a camera to take ___.",
+      "options": [
+        "tickets",
+        "trains",
+        "lunch",
+        "pictures"
+      ],
+      "a": "pictures",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "The children ___ together.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "is play"
+      ],
+      "a": "play",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My mother ___ breakfast.",
+      "options": [
+        "made",
+        "makes",
+        "make",
+        "making"
+      ],
+      "a": "makes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Which verb completes: “Mona ___ TV with her family.”",
+      "options": [
+        "is watch",
+        "watches",
+        "watch",
+        "watching"
+      ],
+      "a": "watches",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "options": [
+        "I am eight years old.",
+        "I is eight years old.",
+        "I are eight years old.",
+        "I has eight years old."
+      ],
+      "a": "I am eight years old.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "A train stops at a ___.",
+      "options": [
+        "room",
+        "museum",
+        "station",
+        "park"
+      ],
+      "a": "station",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I eat rice and chicken for ___.",
+      "options": [
+        "ticket",
+        "lunch",
+        "run",
+        "pound"
+      ],
+      "a": "lunch",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "She ___ her homework after lunch.",
+      "options": [
+        "does",
+        "do",
+        "doing",
+        "is do"
+      ],
+      "a": "does",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "this is my uncle.",
+        "This Is My Uncle",
+        "This is my uncle.",
+        "This is my uncle?"
+      ],
+      "a": "This is my uncle.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correct answer: A person who makes bread is a ___.",
+      "options": [
+        "baker",
+        "doctor",
+        "pilot",
+        "soldier"
+      ],
+      "a": "baker",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "This is Ali. ___ father is a doctor.",
+      "options": [
+        "His",
+        "Her",
+        "My",
+        "He"
+      ],
+      "a": "His",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We visited the Cairo ___.",
+      "options": [
+        "Tower",
+        "Library",
+        "Station",
+        "Garden"
+      ],
+      "a": "Tower",
+      "tag": "Vocabulary"
+    }
+  ],
+  "12": [
+    {
+      "q": "I ___ my friends at the park yesterday.",
+      "options": [
+        "played with",
+        "play with",
+        "plays with",
+        "playing with"
+      ],
+      "a": "played with",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My aunt’s son is my ___.",
+      "options": [
+        "father",
+        "brother",
+        "cousin",
+        "uncle"
+      ],
+      "a": "cousin",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Choose the correct punctuation.",
+      "options": [
+        "She is my baby cousin?",
+        "she is my baby cousin.",
+        "She Is My Baby Cousin",
+        "She is my baby cousin."
+      ],
+      "a": "She is my baby cousin.",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My family ___ me every day.",
+      "options": [
+        "helps",
+        "help",
+        "helping",
+        "helped"
+      ],
+      "a": "helps",
+      "tag": "Grammar"
+    },
+    {
+      "q": "My mother ___ delicious food every day.",
+      "options": [
+        "cooks",
+        "cook",
+        "cooking",
+        "cooked"
+      ],
+      "a": "cooks",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The dog ___ under the box yesterday.",
+      "options": [
+        "roll",
+        "rolls",
+        "rolling",
+        "rolled"
+      ],
+      "a": "rolled",
+      "tag": "Grammar"
+    },
+    {
+      "q": "We can ___ stories to children.",
+      "options": [
+        "reads",
+        "reading",
+        "readed",
+        "read"
+      ],
+      "a": "read",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “One day, Samy was playing in his room when his toy car rolled under the couch. He looked for it behind the curtain and in front of the TV. His sister used a stick to pull it out.” Where did the toy car roll?",
+      "options": [
+        "in the garden",
+        "next to the TV",
+        "under the couch",
+        "on the table"
+      ],
+      "a": "under the couch",
+      "tag": "Reading"
+    },
+    {
+      "q": "My parents ___ kind.",
+      "options": [
+        "is",
+        "am",
+        "has",
+        "are"
+      ],
+      "a": "are",
+      "tag": "Grammar"
+    },
+    {
+      "q": "The letters “wh” make the sound ___.",
+      "options": [
+        "/w/",
+        "/sh/",
+        "/ch/",
+        "/th/"
+      ],
+      "a": "/w/",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Choose the word that begins with “ex”.",
+      "options": [
+        "brother",
+        "celebration",
+        "salty",
+        "exist"
+      ],
+      "a": "exist",
+      "tag": "Phonics"
+    },
+    {
+      "q": "Read: “One day, Samy was playing in his room when his toy car rolled under the couch. He looked for it behind the curtain and in front of the TV. His sister used a stick to pull it out.” Who helped Samy?",
+      "options": [
+        "his teacher",
+        "his sister",
+        "his mother",
+        "his friend"
+      ],
+      "a": "his sister",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which word has the /gz/ sound?",
+      "options": [
+        "garden",
+        "happy",
+        "examine",
+        "sister"
+      ],
+      "a": "examine",
+      "tag": "Phonics"
+    },
+    {
+      "q": "At the ___, we read fun books.",
+      "options": [
+        "Alexandria Library",
+        "Pyramids",
+        "Cairo Tower",
+        "Zoo"
+      ],
+      "a": "Alexandria Library",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Laila is friendly. She smiles and helps others. She has curly hair and big brown eyes.” What is Laila like?",
+      "options": [
+        "friendly",
+        "angry",
+        "lazy",
+        "sad"
+      ],
+      "a": "friendly",
+      "tag": "Reading"
+    },
+    {
+      "q": "My family is very ___ and kind.",
+      "options": [
+        "brave",
+        "favorite",
+        "helpful",
+        "salted"
+      ],
+      "a": "helpful",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "We want to ___ the new city.",
+      "options": [
+        "write",
+        "do",
+        "sleep",
+        "explore"
+      ],
+      "a": "explore",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “Laila is friendly. She smiles and helps others. She has curly hair and big brown eyes.” What kind of hair does she have?",
+      "options": [
+        "straight",
+        "short black",
+        "long blond",
+        "curly"
+      ],
+      "a": "curly",
+      "tag": "Reading"
+    },
+    {
+      "q": "She ___ to the farm with her family.",
+      "options": [
+        "goes",
+        "go",
+        "going",
+        "gone"
+      ],
+      "a": "goes",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Read: “They have many animals on their farm. I love to play with their dog in the garden. My sister Rehab likes to watch the ducks swimming.” What do they have on the farm?",
+      "options": [
+        "many cakes",
+        "many animals",
+        "many schools",
+        "many doctors"
+      ],
+      "a": "many animals",
+      "tag": "Reading"
+    },
+    {
+      "q": "Read: “They have many animals on their farm. I love to play with their dog in the garden. My sister Rehab likes to watch the ducks swimming.” What does the child play with?",
+      "options": [
+        "the dog",
+        "the ducks",
+        "the horses",
+        "the cats"
+      ],
+      "a": "the dog",
+      "tag": "Reading"
+    },
+    {
+      "q": "My dad ___ me with my homework last week.",
+      "options": [
+        "help",
+        "helps",
+        "helping",
+        "helped"
+      ],
+      "a": "helped",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Sara ___ to the park yesterday.",
+      "options": [
+        "go",
+        "going",
+        "went",
+        "goes"
+      ],
+      "a": "went",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Read: “They have many animals on their farm. I love to play with their dog in the garden. My sister Rehab likes to watch the ducks swimming.” What does Rehab watch?",
+      "options": [
+        "the farmer working",
+        "the ducks swimming",
+        "the dog running",
+        "the horses eating"
+      ],
+      "a": "the ducks swimming",
+      "tag": "Reading"
+    },
+    {
+      "q": "Which sentence is about breakfast?",
+      "options": [
+        "I eat breakfast at seven.",
+        "I have curly hair.",
+        "I am from Egypt.",
+        "I am helpful."
+      ],
+      "a": "I eat breakfast at seven.",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "She helps her friends. She is ___.",
+      "options": [
+        "short",
+        "brown",
+        "helpful",
+        "loud"
+      ],
+      "a": "helpful",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "My sister ___ pictures.",
+      "options": [
+        "drawing",
+        "drew",
+        "draws",
+        "draw"
+      ],
+      "a": "draws",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "I am from ___.",
+      "options": [
+        "meet",
+        "Egypt",
+        "Lina",
+        "nine"
+      ],
+      "a": "Egypt",
+      "tag": "Vocabulary"
+    },
+    {
+      "q": "Sara ___ her room every morning.",
+      "options": [
+        "is clean",
+        "cleans",
+        "clean",
+        "cleaning"
+      ],
+      "a": "cleans",
+      "tag": "Grammar"
+    },
+    {
+      "q": "Choose the correctly ordered sentence.",
+      "options": [
+        "Laila her name is.",
+        "Is Laila her name.",
+        "Her name is Laila.",
+        "Name her is Laila."
+      ],
+      "a": "Her name is Laila.",
+      "tag": "Grammar"
+    }
+  ]
+};
+
+// ============================================================
+//  App
+// ============================================================
+let currentModel = 1;
+let studentName = '';
+let quiz = [];              // questions of the current attempt (after shuffling)
+let wrongAnswersLog = [];
+let skillStats = {};
+const SKILL_ORDER = ['Vocabulary', 'Grammar', 'Reading', 'Phonics'];
+const skillKeys = () => SKILL_ORDER.filter(k => skillStats[k]).concat(Object.keys(skillStats).filter(k => SKILL_ORDER.indexOf(k) < 0));
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  $(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+window.onload = () => {
+  const tabs = $('model-tabs');
+  for (let i = 1; i <= 12; i++) {
+    const b = document.createElement('button');
+    b.className = 'tab-btn';
+    b.innerText = `Module ${i}`;
+    b.onclick = () => startApp(i);
+    tabs.appendChild(b);
+  }
+  if (TEACHER_PHONE) {
+    $('teacher-phone-group').style.display = 'none';
+  } else {
+    try { $('teacherPhone').value = localStorage.getItem('teacherPhone') || ''; } catch (e) { /* storage not available */ }
+  }
+};
+
+function startApp(id) {
+  const n = $('studentName');
+  if (!n.value.trim()) {
+    alert('Please enter your name first!\nمن فضلك اكتب اسمك يا بطل');
+    n.focus();
+    return;
+  }
+  studentName = n.value.trim();
+  loadModel(id);
+  showScreen('quiz-screen');
+}
+
+function updateProgress() {
+  const done = document.querySelectorAll('#quiz-content input[type=radio]:checked').length;
+  $('progress-bar').style.width = `${done / quiz.length * 100}%`;
+}
+
+function loadModel(id) {
+  currentModel = id;
+  const base = allModels[String(id)].map(x => ({
+    q: x.q, a: x.a, tag: x.tag,
+    options: SHUFFLE_OPTIONS ? shuffle(x.options) : x.options.slice()
+  }));
+  quiz = SHUFFLE_QUESTIONS ? shuffle(base) : base;
+
+  $('model-title').innerText = `📝 Grade 3 - Units 1-3 - Module ${id}`;
+  $('question-counter').innerText = `${quiz.length} multiple-choice questions`;
+  $('progress-bar').style.width = '0%';
+
+  const c = $('quiz-content');
+  c.innerHTML = '';
+  quiz.forEach((x, i) => {
+    const card = document.createElement('div');
+    card.className = 'question-card';
+
+    const readingMatch = x.tag === 'Reading' ? x.q.match(/^Read:\s*[“\"]([\s\S]*?)[”\"]\s*(.*)$/) : null;
+    if (readingMatch) {
+      const passage = document.createElement('div');
+      passage.className = 'reading-passage';
+      passage.innerText = `📖 ${readingMatch[1]}`;
+      card.appendChild(passage);
+      const q = document.createElement('div');
+      q.className = 'reading-question';
+      q.innerText = `${i + 1}. ${readingMatch[2]}`;
+      card.appendChild(q);
+    } else {
+      const q = document.createElement('div');
+      q.className = 'question-text';
+      q.innerText = `${i + 1}. ${x.q}`;
+      card.appendChild(q);
+    }
+
+    const g = document.createElement('div');
+    g.className = 'options-grid';
+    x.options.forEach(o => {
+      const l = document.createElement('label');
+      l.className = 'option-label';
+      const r = document.createElement('input');
+      r.type = 'radio';
+      r.name = `q${i}`;
+      r.value = o;
+      r.onchange = () => {
+        g.querySelectorAll('.option-label').forEach(el => el.classList.remove('selected'));
+        l.classList.add('selected');
+        updateProgress();
+      };
+      l.appendChild(r);
+      l.appendChild(document.createTextNode(o));
+      g.appendChild(l);
+    });
+    card.appendChild(g);
+    c.appendChild(card);
+  });
+}
+
+function submitQuiz() {
+  const answered = quiz.filter((_, i) => document.querySelector(`input[name=q${i}]:checked`)).length;
+  const ok = answered < quiz.length
+    ? confirm(`You answered ${answered} of ${quiz.length}. Finish anyway?`)
+    : confirm('Are you sure you want to finish the quiz?');
+  if (ok) gradeQuiz();
+}
+
+function gradeQuiz() {
+  let score = 0;
+  wrongAnswersLog = [];
+  skillStats = {};
+  quiz.forEach((x, i) => {
+    if (!skillStats[x.tag]) skillStats[x.tag] = { correct: 0, total: 0 };
+    const st = skillStats[x.tag];
+    st.total++;
+    const sel = document.querySelector(`input[name=q${i}]:checked`);
+    if (sel && sel.value === x.a) {
+      score++;
+      st.correct++;
+    } else {
+      wrongAnswersLog.push({ n: i + 1, q: x.q, user: sel ? sel.value : 'No Answer', correct: x.a, tag: x.tag });
+    }
+  });
+  showResults(score, quiz.length);
+}
+
+function showResults(score, total) {
+  showScreen('result-screen');
+
+  const s = $('score-display');
+  s.innerText = `${score}/${total}`;
+  const noAnswer = wrongAnswersLog.filter(x => x.user === 'No Answer').length;
+  $('result-summary').innerText = `Answered: ${total - noAnswer}/${total} | Mistakes: ${wrongAnswersLog.length}`;
+
+  // per-skill chips
+  $('skills-box').innerHTML = skillKeys().map(k => {
+    const st = skillStats[k];
+    const p = st.correct / st.total;
+    const cls = p >= 0.8 ? 'good' : p >= 0.5 ? 'mid' : 'low';
+    return `<div class="skill-chip ${cls}">${esc(k)}<small>${st.correct}/${st.total}</small></div>`;
+  }).join('');
+
+  // mistakes review
+  const box = $('mistakes-section');
+  if (wrongAnswersLog.length) {
+    box.innerHTML = '<div class="mistakes-title" lang="ar" dir="rtl">مراجعة الأخطاء</div>' +
+      wrongAnswersLog.map(x => {
+        const user = x.user === 'No Answer' ? 'لم تجب' : x.user;
+        return `<div class="mistake-item">
+          <div class="mistake-q">${x.n}. ${esc(x.q)}</div>
+          <div class="wrong-answer" lang="ar" dir="rtl">❌ إجابتك: <bdi>${esc(user)}</bdi></div>
+          <div class="correct-answer" lang="ar" dir="rtl">✅ الإجابة الصحيحة: <bdi>${esc(x.correct)}</bdi></div>
+        </div>`;
+      }).join('');
+  } else {
+    box.innerHTML = '<div class="mistakes-title" lang="ar" dir="rtl" style="color:#168f62">ممتاز! لا توجد أخطاء 🎉</div>';
+  }
+
+  // encouragement (Arabic, name isolated so it never scrambles the sentence)
+  const p = score / total * 100;
+  const m = $('encouragement-msg');
+  const nm = `<bdi>${esc(studentName)}</bdi>`;
+  m.lang = 'ar'; m.dir = 'rtl';
+  if (p === 100)      { s.style.background = '#2ed573'; m.innerHTML = `ممتاز يا ${nm}! 🏆`; }
+  else if (p >= 80)   { s.style.background = '#1e90ff'; m.innerHTML = `رائع يا ${nm}! 💪`; }
+  else if (p >= 50)   { s.style.background = '#ffa502'; m.innerHTML = `جيد يا ${nm}، راجع أخطاءك 👍`; }
+  else                { s.style.background = '#ff4757'; m.innerHTML = `لا تيأس يا ${nm}، حاول مرة أخرى ❤️`; }
+}
+
+function retryModule() {
+  loadModel(currentModel);
+  showScreen('quiz-screen');
+}
+
+function backToModules() {
+  showScreen('welcome-screen');   // the student name stays filled in
+}
+
+// ---------- WhatsApp report ----------
+function normalizePhone(v) {
+  let d = String(v).replace(/\D/g, '');
+  if (d.indexOf('0020') === 0) d = d.slice(4);                          // 0020 1xx...
+  else if (d.indexOf('20') === 0 && d.length >= 12) d = d.slice(2);     // +20 1xx...
+  if (d.charAt(0) === '0') d = d.slice(1);                              // 01xx...
+  return (d.length === 10 && d.charAt(0) === '1') ? '20' + d : null;
+}
+
+function getTeacherPhone() {
+  const input = TEACHER_PHONE || $('teacherPhone').value;
+  const phone = normalizePhone(input);
+  if (!phone) {
+    alert('Please enter a valid Egyptian mobile number, e.g. 01xxxxxxxxx\nمن فضلك اكتب رقم موبايل مصري صحيح');
+    return null;
+  }
+  if (!TEACHER_PHONE) {
+    try { localStorage.setItem('teacherPhone', $('teacherPhone').value.trim()); } catch (e) { /* ignore */ }
+  }
+  return phone;
+}
+
+// For reading questions, drop the passage and keep only the question itself
+function shortQuestion(q) {
+  const i = q.lastIndexOf('”');
+  return (q.indexOf('Read:') === 0 && i > -1) ? q.slice(i + 1).trim() : q;
+}
+
+function sendWhatsApp() {
+  const phone = getTeacherPhone();
+  if (!phone) return;
+
+  const skills = skillKeys().map(k => `${k} ${skillStats[k].correct}/${skillStats[k].total}`).join(' | ');
+  let msg = `*Units 1-3 Revision - Grade 3*\n--------------------\n` +
+            `👤 *Student:* ${studentName}\n` +
+            `📝 *Module:* ${currentModel}\n` +
+            `📊 *Score:* ${$('score-display').innerText}\n` +
+            `🧩 *Skills:* ${skills}\n`;
+
+  if (wrongAnswersLog.length) {
+    msg += `\n*Mistakes (${wrongAnswersLog.length}):*\n`;
+    wrongAnswersLog.slice(0, MAX_MISTAKES_IN_REPORT).forEach(x => {
+      msg += `• [${x.tag}] ${shortQuestion(x.q)} → ${x.user} ✗ (correct: ${x.correct})\n`;
+    });
+    if (wrongAnswersLog.length > MAX_MISTAKES_IN_REPORT) {
+      msg += `… and ${wrongAnswersLog.length - MAX_MISTAKES_IN_REPORT} more\n`;
+    }
+  } else {
+    msg += '🎉 *Perfect score!*';
+  }
+
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+</script>
+</body>
+</html>
